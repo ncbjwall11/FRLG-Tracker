@@ -6,14 +6,16 @@ import { LocationPanel } from './components/LocationPanel'
 import pokedexData from './data/frlg-pokemon.json'
 
 export default function App() {
-  const { loadData, caughtIds, pokemon, loaded, selectedId, clearSelection, getFiltered } = usePokemonStore()
+  const { loadData, caughtIds, loaded, selectedId, clearSelection, getFiltered, getActivePokemon, dexView } = usePokemonStore()
 
   useEffect(() => {
     loadData(pokedexData)
   }, [])
 
   const filtered = getFiltered()
-  const caughtCount = [...caughtIds].filter(id => pokemon.some(p => p.id === id)).length
+  const activePokemon = getActivePokemon()
+  const caughtCount = [...caughtIds].filter(id => activePokemon.some(p => p.id === id)).length
+  const total = activePokemon.length
 
   if (!loaded) {
     return (
@@ -26,34 +28,38 @@ export default function App() {
     )
   }
 
+  const headerBg = dexView === 'national' ? 'bg-indigo-700' : 'bg-red-600'
+  const headerBgBar = dexView === 'national' ? 'bg-indigo-900' : 'bg-red-800'
+  const headerSubtext = dexView === 'national' ? 'text-indigo-200' : 'text-red-200'
+
   return (
     <div className={`min-h-screen bg-gray-50 transition-all ${selectedId ? 'pr-80' : ''}`}>
       {/* App header */}
-      <header className="bg-red-600 text-white px-4 py-3 flex items-center gap-3 shadow-md">
-        <span className="text-2xl">🔴</span>
+      <header className={`${headerBg} text-white px-4 py-3 flex items-center gap-3 shadow-md`}>
+        <span className="text-2xl">{dexView === 'national' ? '🌍' : '🔴'}</span>
         <div>
           <h1 className="text-lg font-bold leading-tight">FireRed / LeafGreen Tracker</h1>
-          <p className="text-red-200 text-xs">
-            {caughtCount} / {pokemon.length} caught
-            {caughtCount === pokemon.length && pokemon.length > 0 && ' 🎉'}
+          <p className={`${headerSubtext} text-xs`}>
+            {dexView === 'kanto' ? 'Kanto Dex' : 'National Dex'} — {caughtCount} / {total} caught
+            {caughtCount === total && total > 0 && ' 🎉'}
           </p>
         </div>
         {/* Progress bar */}
         <div className="flex-1 max-w-xs ml-auto hidden sm:block">
-          <div className="h-2 rounded-full bg-red-800 overflow-hidden">
+          <div className={`h-2 rounded-full ${headerBgBar} overflow-hidden`}>
             <div
               className="h-full bg-white rounded-full transition-all duration-300"
-              style={{ width: pokemon.length ? `${(caughtCount / pokemon.length) * 100}%` : '0%' }}
+              style={{ width: total ? `${(caughtCount / total) * 100}%` : '0%' }}
             />
           </div>
-          <p className="text-right text-red-200 text-[10px] mt-0.5">
-            {pokemon.length ? Math.round((caughtCount / pokemon.length) * 100) : 0}%
+          <p className={`text-right ${headerSubtext} text-[10px] mt-0.5`}>
+            {total ? Math.round((caughtCount / total) * 100) : 0}%
           </p>
         </div>
       </header>
 
       {/* Filter bar */}
-      <FilterBar totalCount={pokemon.length} filteredCount={filtered.length} />
+      <FilterBar totalCount={total} filteredCount={filtered.length} />
 
       {/* Main grid */}
       <main>

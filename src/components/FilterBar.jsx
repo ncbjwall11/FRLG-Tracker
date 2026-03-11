@@ -7,6 +7,7 @@ const TYPES = [
 
 export function FilterBar({ totalCount, filteredCount }) {
   const {
+    dexView, setDexView,
     searchQuery, filterType, filterLocation, filterVersion, filterCaught, sortBy,
     locations, setSearch, setFilterType, setFilterLocation, setFilterVersion,
     setFilterCaught, setSortBy, resetFilters,
@@ -17,7 +18,32 @@ export function FilterBar({ totalCount, filteredCount }) {
   return (
     <div className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-3 space-y-2">
-        {/* Row 1: Search + Sort */}
+
+        {/* Row 1: Dex toggle — prominent, full width */}
+        <div className="flex rounded-xl border-2 border-gray-200 overflow-hidden text-sm font-semibold">
+          <button
+            onClick={() => setDexView('kanto')}
+            className={`flex-1 py-2 transition-colors flex items-center justify-center gap-2
+              ${dexView === 'kanto'
+                ? 'bg-red-600 text-white'
+                : 'bg-white text-gray-500 hover:bg-gray-50'}`}
+          >
+            🗺️ Kanto Dex
+            <span className={`text-xs font-normal ${dexView === 'kanto' ? 'text-red-200' : 'text-gray-400'}`}>#001–#151</span>
+          </button>
+          <button
+            onClick={() => setDexView('national')}
+            className={`flex-1 py-2 transition-colors flex items-center justify-center gap-2 border-l border-gray-200
+              ${dexView === 'national'
+                ? 'bg-indigo-600 text-white'
+                : 'bg-white text-gray-500 hover:bg-gray-50'}`}
+          >
+            🌍 National Dex
+            <span className={`text-xs font-normal ${dexView === 'national' ? 'text-indigo-200' : 'text-gray-400'}`}>All FRLG</span>
+          </button>
+        </div>
+
+        {/* Row 2: Search + Sort + count */}
         <div className="flex gap-2 flex-wrap items-center">
           <input
             type="search"
@@ -55,9 +81,8 @@ export function FilterBar({ totalCount, filteredCount }) {
           )}
         </div>
 
-        {/* Row 2: Filters */}
+        {/* Row 3: Filters */}
         <div className="flex gap-2 flex-wrap items-center">
-          {/* Type filter */}
           <select
             value={filterType}
             onChange={e => setFilterType(e.target.value)}
@@ -69,7 +94,6 @@ export function FilterBar({ totalCount, filteredCount }) {
             ))}
           </select>
 
-          {/* Location filter */}
           <select
             value={filterLocation}
             onChange={e => setFilterLocation(e.target.value)}
@@ -81,7 +105,6 @@ export function FilterBar({ totalCount, filteredCount }) {
             ))}
           </select>
 
-          {/* Version filter */}
           <div className="flex rounded-lg border border-gray-300 overflow-hidden text-sm">
             {[['', 'Both'], ['firered', 'FireRed'], ['leafgreen', 'LeafGreen']].map(([val, label]) => (
               <button
@@ -98,7 +121,6 @@ export function FilterBar({ totalCount, filteredCount }) {
             ))}
           </div>
 
-          {/* Caught filter */}
           <div className="flex rounded-lg border border-gray-300 overflow-hidden text-sm">
             {[['', 'All'], ['caught', 'Caught ✓'], ['uncaught', 'Uncaught']].map(([val, label]) => (
               <button

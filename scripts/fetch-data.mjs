@@ -1,9 +1,9 @@
 /**
  * FRLG Pokédex Data Compiler
  *
- * Fetches Pokémon data from PokeAPI for all 151 Kanto Pokémon,
- * compiles encounter data for FireRed/LeafGreen, and merges with
- * manually curated data for gifts/trades/statics.
+ * Fetches Pokémon data from PokeAPI:
+ *   - IDs 1–151 (Kanto): all included, dex:'kanto'
+ *   - IDs 152–386 (Gen 2–3): only included if they have FRLG encounter data, dex:'national'
  *
  * Run: node scripts/fetch-data.mjs
  * Output: src/data/frlg-pokemon.json
@@ -16,8 +16,10 @@ import { manualData, versionExclusives } from '../src/data/frlg-manual.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTPUT_PATH = path.join(__dirname, '../src/data/frlg-pokemon.json')
-const DELAY_MS = 250 // Polite delay between API calls
+const DELAY_MS = 200
 
+const KANTO_MAX = 151
+const NATIONAL_MAX = 386
 const FRLG_VERSIONS = ['firered', 'leafgreen']
 
 function sleep(ms) {
@@ -30,17 +32,16 @@ async function fetchJson(url) {
   return res.json()
 }
 
-function getVersionForId(id) {
+function getVersionExclusivity(id) {
   if (versionExclusives.firered.includes(id)) return 'firered'
   if (versionExclusives.leafgreen.includes(id)) return 'leafgreen'
   return 'both'
 }
 
-/** Prettify raw location area name like "viridian-forest-area" → "Viridian Forest" */
 function prettifyLocation(name) {
   return name
     .replace(/-area$/, '')
-    .replace(/-\d+f$/, (m) => ` (${m.replace('--', '').replace('-', '').toUpperCase()}F)`)
+    .replace(/-(\d+)f$/, (_, n) => ` (${n}F)`)
     .split('-')
     .map(w => w.charAt(0).toUpperCase() + w.slice(1))
     .join(' ')
@@ -59,47 +60,35 @@ const METHOD_DISPLAY = {
   static: 'Static',
 }
 
-async function fetchPokemon(id) {
-  process.stdout.write(`  [${id}/151] Fetching Pokémon #${id}...`)
+async function fetchPokemon(id, total) {
+  process.stdout.write(`  [${String(id).padStart(3)}/${total}] #${id}...`)
+
   const data = await fetchJson(`https://pokeapi.co/api/v2/pokemon/${id}/`)
-  process.stdout.write(' data')
-
   await sleep(DELAY_MS)
-
   const encountersRaw = await fetchJson(`https://pokeapi.co/api/v2/pokemon/${id}/encounters`)
-  process.stdout.write(' encounters')
 
-  // Sprite: prefer Gen-III FRLG sprite, fallback to default
   const sprite =
     data.sprites?.versions?.['generation-iii']?.['firered-leafgreen']?.front_default ||
     data.sprites?.front_default ||
     null
 
-  // Types
   const types = data.types.map(t => t.type.name)
 
-  // Process encounter data for FRLG versions
+  // Build encounter map, merging FR+LG entries for the same area+method
   const encountersByArea = {}
-
   for (const enc of encountersRaw) {
     const areaName = enc.location_area.name
-    const areaUrl = enc.location_area.url
-
-    for (const versionData of enc.version_details) {
-      if (!FRLG_VERSIONS.includes(versionData.version.name)) continue
-
-      const version = versionData.version.name
-
-      for (const detail of versionData.encounter_details) {
-        const method = detail.method.name
-        const key = `${areaName}::${method}`
-
+    for (const vd of enc.version_details) {
+      if (!FRLG_VERSIONS.includes(vd.version.name)) continue
+      const version = vd.version.name
+      for (const detail of vd.encounter_details) {
+        const key = `${areaName}::${detail.method.name}`
         if (!encountersByArea[key]) {
           encountersByArea[key] = {
             area: areaName,
             location: prettifyLocation(areaName),
-            method,
-            methodDisplay: METHOD_DISPLAY[method] || method,
+            method: detail.method.name,
+            methodDisplay: METHOD_DISPLAY[detail.method.name] || detail.method.name,
             minLevel: detail.min_level,
             maxLevel: detail.max_level,
             chance: detail.chance,
@@ -115,13 +104,12 @@ async function fetchPokemon(id) {
     }
   }
 
-  // Serialize version Sets
   const encounters = Object.values(encountersByArea).map(e => ({
     ...e,
     versions: e.versions.size === 2 ? 'both' : [...e.versions][0],
   }))
 
-  // Merge manual data
+  // Merge manual data (gifts, trades, statics — mainly for Kanto)
   const manual = manualData[id]
   if (manual?.obtainMethods) {
     for (const m of manual.obtainMethods) {
@@ -139,16 +127,14 @@ async function fetchPokemon(id) {
     }
   }
 
-  const exclusivity = getVersionForId(id)
-
-  console.log(` ✓ (${encounters.length} encounters)`)
+  process.stdout.write(` ✓ (${encounters.length} enc)\n`)
 
   return {
     id,
     name: data.name,
     types,
     sprite,
-    exclusivity, // 'both' | 'firered' | 'leafgreen'
+    exclusivity: getVersionExclusivity(id),
     encounters,
   }
 }
@@ -156,18 +142,34 @@ async function fetchPokemon(id) {
 async function main() {
   console.log('FRLG Pokédex Data Compiler')
   console.log('==========================')
-  console.log(`Fetching 151 Pokémon from PokeAPI with ${DELAY_MS}ms delay...\n`)
 
   const pokemon = []
-  let errors = []
+  const errors = []
 
-  for (let id = 1; id <= 151; id++) {
+  // --- Kanto Dex (1–151): include all ---
+  console.log(`\nKanto Dex (1–${KANTO_MAX}):\n`)
+  for (let id = 1; id <= KANTO_MAX; id++) {
     try {
-      const p = await fetchPokemon(id)
-      pokemon.push(p)
+      const p = await fetchPokemon(id, KANTO_MAX)
+      pokemon.push({ ...p, dex: 'kanto' })
       await sleep(DELAY_MS)
     } catch (err) {
-      console.error(`  ERROR for #${id}: ${err.message}`)
+      console.error(`  ERROR #${id}: ${err.message}`)
+      errors.push(id)
+    }
+  }
+
+  // --- National Dex (152–386): only include if they have FRLG encounters ---
+  console.log(`\nNational Dex (152–${NATIONAL_MAX}) — including only those with FRLG encounters:\n`)
+  for (let id = KANTO_MAX + 1; id <= NATIONAL_MAX; id++) {
+    try {
+      const p = await fetchPokemon(id, NATIONAL_MAX)
+      if (p.encounters.length > 0) {
+        pokemon.push({ ...p, dex: 'national' })
+      }
+      await sleep(DELAY_MS)
+    } catch (err) {
+      console.error(`  ERROR #${id}: ${err.message}`)
       errors.push(id)
     }
   }
@@ -176,17 +178,16 @@ async function main() {
     console.warn(`\nWarning: Failed to fetch IDs: ${errors.join(', ')}`)
   }
 
-  // Sort by ID
   pokemon.sort((a, b) => a.id - b.id)
 
-  // Build unique location list for filter dropdown
-  const allLocations = [...new Set(
-    pokemon.flatMap(p => p.encounters.map(e => e.location))
-  )].sort()
+  const kantoList = pokemon.filter(p => p.dex === 'kanto')
+  const nationalList = pokemon.filter(p => p.dex === 'national')
+  const allLocations = [...new Set(pokemon.flatMap(p => p.encounters.map(e => e.location)))].sort()
 
   const output = {
     generatedAt: new Date().toISOString(),
-    count: pokemon.length,
+    kantoCount: kantoList.length,
+    nationalCount: nationalList.length,
     locations: allLocations,
     pokemon,
   }
@@ -194,7 +195,8 @@ async function main() {
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2), 'utf-8')
 
   console.log(`\nDone! Written to ${OUTPUT_PATH}`)
-  console.log(`  Pokémon: ${pokemon.length}`)
+  console.log(`  Kanto Pokémon: ${kantoList.length}`)
+  console.log(`  National-only Pokémon: ${nationalList.length} (${nationalList.map(p => `#${p.id} ${p.name}`).join(', ')})`)
   console.log(`  Unique locations: ${allLocations.length}`)
 }
 

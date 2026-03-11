@@ -2,7 +2,7 @@ import { usePokemonStore } from '../store/usePokemonStore'
 import { TYPE_COLORS, TYPE_TEXT } from './typeColors'
 
 export function PokemonCard({ pokemon }) {
-  const { caughtIds, toggleCaught, selectedId, selectPokemon, clearSelection } = usePokemonStore()
+  const { caughtIds, toggleCaught, selectedId, selectPokemon, clearSelection, dexView } = usePokemonStore()
   const caught = caughtIds.has(pokemon.id)
   const selected = selectedId === pokemon.id
 
@@ -43,7 +43,12 @@ export function PokemonCard({ pokemon }) {
 
       {/* Dex number + version badge */}
       <div className="flex items-center gap-1 w-full mb-0.5">
-        <span className="text-[10px] text-gray-400 font-mono">#{String(pokemon.id).padStart(3, '0')}</span>
+        <span className="text-[10px] text-gray-400 font-mono">
+          #{String(pokemon.id).padStart(3, '0')}
+          {dexView === 'national' && pokemon.dex === 'kanto' && (
+            <span className="ml-1 text-gray-300">Kanto</span>
+          )}
+        </span>
         <div className="ml-auto">{versionBadge}</div>
       </div>
 

@@ -1,32 +1,43 @@
 {
-  "generatedAt": "2026-03-11T12:50:49.158Z",
-  "count": 151,
+  "generatedAt": "2026-03-11T14:01:38.339Z",
+  "kantoCount": 151,
+  "nationalCount": 41,
   "locations": [
     "Berry Forest",
+    "Birth Island",
     "Bond Bridge",
     "Canyon Entrance",
     "Cape Brink",
     "Celadon City",
     "Celadon City Celadon Mansion",
     "Cerulean Cave",
-    "Cerulean Cave (1FF)",
-    "Cerulean Cave (2FF)",
+    "Cerulean Cave (1F)",
+    "Cerulean Cave (2F)",
     "Cerulean Cave B1f",
     "Cerulean City",
     "Cinnabar Island",
     "Cinnabar Island Cinnabar Lab",
     "Cinnabar Island Lab",
     "Digletts Cave",
+    "Dilford Chamber",
     "Five Island",
     "Five Isle Meadow",
     "Four Island",
     "Fuchsia City",
     "Green Path",
-    "Icefall Cave (1FF)",
+    "Icefall Cave (1F)",
     "Icefall Cave B1f",
     "Icefall Cave Entrance",
     "Icefall Cave Waterfall",
     "Kanto Altering Cave A",
+    "Kanto Altering Cave B",
+    "Kanto Altering Cave C",
+    "Kanto Altering Cave D",
+    "Kanto Altering Cave E",
+    "Kanto Altering Cave F",
+    "Kanto Altering Cave G",
+    "Kanto Altering Cave H",
+    "Kanto Altering Cave I",
     "Kanto Pokecenter",
     "Kanto Route 1",
     "Kanto Route 10",
@@ -59,10 +70,11 @@
     "Kanto Sea Route 19",
     "Kanto Sea Route 20",
     "Kanto Sea Route 21",
-    "Kanto Victory Road 2 (1FF)",
-    "Kanto Victory Road 2 (2FF)",
-    "Kanto Victory Road 2 (3FF)",
+    "Kanto Victory Road 2 (1F)",
+    "Kanto Victory Road 2 (2F)",
+    "Kanto Victory Road 2 (3F)",
     "Kindle Road",
+    "Liptoo Chamber",
     "Lost Cave Item Rooms",
     "Lost Cave Room 1",
     "Lost Cave Room 10",
@@ -75,45 +87,51 @@
     "Lost Cave Room 8",
     "Lost Cave Room 9",
     "Memorial Pillar",
+    "Monean Chamber",
     "Mt Ember",
     "Mt Ember 1f Cave Behind Team Rocket",
     "Mt Ember B1f",
     "Mt Ember B2f",
+    "Mt Ember B3f",
     "Mt Ember Cave",
     "Mt Ember Inside",
     "Mt Ember Summit",
-    "Mt Moon (1FF)",
+    "Mt Moon (1F)",
     "Mt Moon B1f",
     "Mt Moon B2f",
     "Mt. Ember",
     "Mt. Moon (B2F)",
+    "Navel Rock",
     "Nintendo Event",
     "One Island",
     "Outcast Island",
     "Pallet Town",
     "Pattern Bush",
     "Pewter City Museum",
-    "Pokemon Mansion (1FF)",
-    "Pokemon Mansion (2FF)",
-    "Pokemon Mansion (3FF)",
+    "Pokemon Mansion (1F)",
+    "Pokemon Mansion (2F)",
+    "Pokemon Mansion (3F)",
     "Pokemon Mansion B1f",
-    "Pokemon Tower (3FF)",
-    "Pokemon Tower (4FF)",
-    "Pokemon Tower (5FF)",
-    "Pokemon Tower (6FF)",
-    "Pokemon Tower (7FF)",
+    "Pokemon Tower (3F)",
+    "Pokemon Tower (4F)",
+    "Pokemon Tower (5F)",
+    "Pokemon Tower (6F)",
+    "Pokemon Tower (7F)",
     "Power Plant",
     "Resort Gorgeous",
-    "Rock Tunnel (1FF)",
+    "Rixy Chamber",
+    "Roaming Kanto",
+    "Rock Tunnel (1F)",
     "Rock Tunnel B1f",
     "Route 16",
     "Route 2",
     "Ruin Valley",
     "Saffron City",
     "Saffron City Fighting Dojo",
-    "Saffron City Silph Co (7FF)",
+    "Saffron City Silph Co (7F)",
+    "Scufib Chamber",
     "Seafoam Islands",
-    "Seafoam Islands (1FF)",
+    "Seafoam Islands (1F)",
     "Seafoam Islands B1f",
     "Seafoam Islands B2f",
     "Seafoam Islands B3f",
@@ -122,13 +140,16 @@
     "Silph Co.",
     "Ss Anne",
     "Tanoby Ruins",
+    "Three Isle Port",
     "Trainer Tower",
     "Treasure Beach",
     "Vermilion City",
+    "Viapos Chamber",
     "Viridian City",
     "Viridian Forest",
     "Water Labyrinth",
-    "Water Path"
+    "Water Path",
+    "Weepth Chamber"
   ],
   "pokemon": [
     {
@@ -162,7 +183,8 @@
           "versions": "both",
           "notes": "Choose as starter from Prof. Oak (1 of 3 choices)"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 2,
@@ -173,7 +195,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/2.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 3,
@@ -184,7 +207,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/3.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 4,
@@ -216,7 +240,8 @@
           "versions": "both",
           "notes": "Choose as starter from Prof. Oak (1 of 3 choices)"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 5,
@@ -226,7 +251,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/5.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 6,
@@ -237,7 +263,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/6.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 7,
@@ -269,7 +296,8 @@
           "versions": "both",
           "notes": "Choose as starter from Prof. Oak (1 of 3 choices)"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 8,
@@ -279,7 +307,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/8.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 9,
@@ -289,7 +318,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/9.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 10,
@@ -350,7 +380,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 11,
@@ -401,7 +432,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 12,
@@ -412,7 +444,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/12.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 13,
@@ -474,7 +507,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 14,
@@ -526,7 +560,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 15,
@@ -537,7 +572,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/15.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 16,
@@ -709,7 +745,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 17,
@@ -781,7 +818,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 18,
@@ -792,7 +830,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/18.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 19,
@@ -885,7 +924,7 @@
         },
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 26,
@@ -895,7 +934,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 26,
@@ -905,7 +944,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 26,
@@ -923,7 +962,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 20,
@@ -966,7 +1006,7 @@
         },
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -976,7 +1016,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -986,7 +1026,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -1004,7 +1044,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 21,
@@ -1186,7 +1227,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 22,
@@ -1308,7 +1350,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 23,
@@ -1379,7 +1422,8 @@
           "chance": 10,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 24,
@@ -1402,7 +1446,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -1412,7 +1456,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 46,
@@ -1422,7 +1466,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -1430,7 +1474,8 @@
           "chance": 5,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 25,
@@ -1471,7 +1516,8 @@
           "chance": 100,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 26,
@@ -1481,7 +1527,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/26.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 27,
@@ -1552,7 +1599,8 @@
           "chance": 10,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 28,
@@ -1575,7 +1623,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -1585,7 +1633,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 46,
@@ -1595,7 +1643,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -1603,7 +1651,8 @@
           "chance": 5,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 29,
@@ -1664,7 +1713,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 30,
@@ -1715,7 +1765,8 @@
           "chance": 10,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 31,
@@ -1726,7 +1777,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/31.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 32,
@@ -1787,7 +1839,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 33,
@@ -1838,7 +1891,8 @@
           "chance": 10,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 34,
@@ -1849,7 +1903,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/34.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 35,
@@ -1862,7 +1917,7 @@
       "encounters": [
         {
           "area": "mt-moon-1f",
-          "location": "Mt Moon (1FF)",
+          "location": "Mt Moon (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 8,
@@ -1880,7 +1935,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 36,
@@ -1890,7 +1946,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/36.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 37,
@@ -1923,7 +1980,7 @@
         },
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 30,
@@ -1933,7 +1990,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 30,
@@ -1943,7 +2000,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 30,
@@ -1961,7 +2018,8 @@
           "chance": 10,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 38,
@@ -1971,7 +2029,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/38.png",
       "exclusivity": "leafgreen",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 39,
@@ -1993,7 +2052,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 40,
@@ -2004,7 +2064,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/40.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 41,
@@ -2018,7 +2079,7 @@
       "encounters": [
         {
           "area": "seafoam-islands-1f",
-          "location": "Seafoam Islands (1FF)",
+          "location": "Seafoam Islands (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 22,
@@ -2058,7 +2119,7 @@
         },
         {
           "area": "mt-moon-1f",
-          "location": "Mt Moon (1FF)",
+          "location": "Mt Moon (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 7,
@@ -2068,7 +2129,7 @@
         },
         {
           "area": "rock-tunnel-1f",
-          "location": "Rock Tunnel (1FF)",
+          "location": "Rock Tunnel (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 15,
@@ -2098,7 +2159,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -2108,7 +2169,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 34,
@@ -2118,7 +2179,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -2138,7 +2199,7 @@
         },
         {
           "area": "icefall-cave-1f",
-          "location": "Icefall Cave (1FF)",
+          "location": "Icefall Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 40,
@@ -2286,7 +2347,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 42,
@@ -2300,7 +2362,7 @@
       "encounters": [
         {
           "area": "seafoam-islands-1f",
-          "location": "Seafoam Islands (1FF)",
+          "location": "Seafoam Islands (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 26,
@@ -2350,7 +2412,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 46,
@@ -2360,7 +2422,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 49,
@@ -2380,7 +2442,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -2390,7 +2452,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 46,
@@ -2400,7 +2462,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -2420,7 +2482,7 @@
         },
         {
           "area": "icefall-cave-1f",
-          "location": "Icefall Cave (1FF)",
+          "location": "Icefall Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 45,
@@ -2558,7 +2620,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 43,
@@ -2700,7 +2763,8 @@
           "chance": 10,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 44,
@@ -2792,7 +2856,8 @@
           "chance": 5,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 45,
@@ -2803,7 +2868,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/45.png",
       "exclusivity": "firered",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 46,
@@ -2817,7 +2883,7 @@
       "encounters": [
         {
           "area": "mt-moon-1f",
-          "location": "Mt Moon (1FF)",
+          "location": "Mt Moon (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 8,
@@ -2865,7 +2931,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 47,
@@ -2879,7 +2946,7 @@
       "encounters": [
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 49,
@@ -2889,7 +2956,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 52,
@@ -2927,7 +2994,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 48,
@@ -3019,7 +3087,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 49,
@@ -3061,7 +3130,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 50,
@@ -3082,7 +3152,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 51,
@@ -3103,7 +3174,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 52,
@@ -3244,7 +3316,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 53,
@@ -3345,7 +3418,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 54,
@@ -3358,7 +3432,7 @@
       "encounters": [
         {
           "area": "seafoam-islands-1f",
-          "location": "Seafoam Islands (1FF)",
+          "location": "Seafoam Islands (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 26,
@@ -3688,7 +3762,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "super-rod",
           "methodDisplay": "Super Rod",
           "minLevel": 15,
@@ -3698,7 +3772,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "surf",
           "methodDisplay": "Surf",
           "minLevel": 30,
@@ -4186,7 +4260,8 @@
           "chance": 1,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 55,
@@ -4259,7 +4334,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "surf",
           "methodDisplay": "Surf",
           "minLevel": 40,
@@ -4307,7 +4382,8 @@
           "chance": 4,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 56,
@@ -4320,7 +4396,7 @@
       "encounters": [
         {
           "area": "rock-tunnel-1f",
-          "location": "Rock Tunnel (1FF)",
+          "location": "Rock Tunnel (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 16,
@@ -4378,7 +4454,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 57,
@@ -4391,7 +4468,7 @@
       "encounters": [
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 52,
@@ -4411,7 +4488,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 42,
@@ -4419,7 +4496,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 58,
@@ -4452,7 +4530,7 @@
         },
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 30,
@@ -4462,7 +4540,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 30,
@@ -4472,7 +4550,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 30,
@@ -4490,7 +4568,8 @@
           "chance": 10,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 59,
@@ -4500,7 +4579,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/59.png",
       "exclusivity": "firered",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 60,
@@ -4603,7 +4683,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "good-rod",
           "methodDisplay": "Good Rod",
           "minLevel": 5,
@@ -4613,7 +4693,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "super-rod",
           "methodDisplay": "Super Rod",
           "minLevel": 15,
@@ -4791,7 +4871,8 @@
           "chance": 40,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 61,
@@ -4844,7 +4925,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "super-rod",
           "methodDisplay": "Super Rod",
           "minLevel": 20,
@@ -4912,7 +4993,8 @@
           "chance": 40,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 62,
@@ -4923,7 +5005,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/62.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 63,
@@ -4954,7 +5037,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 64,
@@ -4967,7 +5051,7 @@
       "encounters": [
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 55,
@@ -4985,7 +5069,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 65,
@@ -4995,7 +5080,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/65.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 66,
@@ -5008,7 +5094,7 @@
       "encounters": [
         {
           "area": "rock-tunnel-1f",
-          "location": "Rock Tunnel (1FF)",
+          "location": "Rock Tunnel (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 16,
@@ -5028,7 +5114,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -5038,7 +5124,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 34,
@@ -5048,7 +5134,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -5096,7 +5182,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 67,
@@ -5109,7 +5196,7 @@
       "encounters": [
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 46,
@@ -5119,7 +5206,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 49,
@@ -5139,7 +5226,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -5149,7 +5236,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 46,
@@ -5159,7 +5246,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -5187,7 +5274,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 68,
@@ -5197,7 +5285,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/68.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 69,
@@ -5339,7 +5428,8 @@
           "chance": 10,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 70,
@@ -5431,7 +5521,8 @@
           "chance": 5,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 71,
@@ -5442,7 +5533,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/71.png",
       "exclusivity": "leafgreen",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 72,
@@ -5744,7 +5836,8 @@
           "chance": 60,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 73,
@@ -5906,7 +5999,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 74,
@@ -5920,7 +6014,7 @@
       "encounters": [
         {
           "area": "mt-moon-1f",
-          "location": "Mt Moon (1FF)",
+          "location": "Mt Moon (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 7,
@@ -5930,7 +6024,7 @@
         },
         {
           "area": "rock-tunnel-1f",
-          "location": "Rock Tunnel (1FF)",
+          "location": "Rock Tunnel (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 15,
@@ -5960,7 +6054,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "rock-smash",
           "methodDisplay": "Rock Smash",
           "minLevel": 30,
@@ -5970,7 +6064,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "rock-smash",
           "methodDisplay": "Rock Smash",
           "minLevel": 35,
@@ -6000,7 +6094,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -6010,7 +6104,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 34,
@@ -6020,7 +6114,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -6188,7 +6282,8 @@
           "chance": 60,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 75,
@@ -6212,7 +6307,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "rock-smash",
           "methodDisplay": "Rock Smash",
           "minLevel": 40,
@@ -6222,7 +6317,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "rock-smash",
           "methodDisplay": "Rock Smash",
           "minLevel": 45,
@@ -6320,7 +6415,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 76,
@@ -6331,7 +6427,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/76.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 77,
@@ -6362,7 +6459,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 78,
@@ -6393,7 +6491,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 79,
@@ -6407,7 +6506,7 @@
       "encounters": [
         {
           "area": "seafoam-islands-1f",
-          "location": "Seafoam Islands (1FF)",
+          "location": "Seafoam Islands (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 26,
@@ -6737,7 +6836,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "super-rod",
           "methodDisplay": "Super Rod",
           "minLevel": 15,
@@ -6747,7 +6846,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "surf",
           "methodDisplay": "Surf",
           "minLevel": 30,
@@ -7235,7 +7334,8 @@
           "chance": 1,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 80,
@@ -7319,7 +7419,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "surf",
           "methodDisplay": "Surf",
           "minLevel": 40,
@@ -7367,7 +7467,8 @@
           "chance": 4,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 81,
@@ -7389,7 +7490,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 82,
@@ -7403,7 +7505,7 @@
       "encounters": [
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 49,
@@ -7413,7 +7515,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 52,
@@ -7441,7 +7543,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 83,
@@ -7464,7 +7567,8 @@
           "versions": "both",
           "notes": "Trade a Spearow to NPC in Vermilion City house"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 84,
@@ -7526,7 +7630,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 85,
@@ -7537,7 +7642,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/85.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 86,
@@ -7630,7 +7736,7 @@
         },
         {
           "area": "icefall-cave-1f",
-          "location": "Icefall Cave (1FF)",
+          "location": "Icefall Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 45,
@@ -7658,7 +7764,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 87,
@@ -7740,7 +7847,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 88,
@@ -7763,7 +7871,7 @@
         },
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 28,
@@ -7773,7 +7881,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 28,
@@ -7783,7 +7891,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 28,
@@ -7801,7 +7909,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 89,
@@ -7814,7 +7923,7 @@
       "encounters": [
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -7824,7 +7933,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -7834,7 +7943,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -7852,7 +7961,8 @@
           "chance": 5,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 90,
@@ -7933,7 +8043,8 @@
           "chance": 40,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 91,
@@ -7944,7 +8055,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/91.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 92,
@@ -7958,7 +8070,7 @@
       "encounters": [
         {
           "area": "pokemon-tower-3f",
-          "location": "Pokemon Tower (3FF)",
+          "location": "Pokemon Tower (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 13,
@@ -7968,7 +8080,7 @@
         },
         {
           "area": "pokemon-tower-4f",
-          "location": "Pokemon Tower (4FF)",
+          "location": "Pokemon Tower (4F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 13,
@@ -7978,7 +8090,7 @@
         },
         {
           "area": "pokemon-tower-5f",
-          "location": "Pokemon Tower (5FF)",
+          "location": "Pokemon Tower (5F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 13,
@@ -7988,7 +8100,7 @@
         },
         {
           "area": "pokemon-tower-6f",
-          "location": "Pokemon Tower (6FF)",
+          "location": "Pokemon Tower (6F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 14,
@@ -7998,7 +8110,7 @@
         },
         {
           "area": "pokemon-tower-7f",
-          "location": "Pokemon Tower (7FF)",
+          "location": "Pokemon Tower (7F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 15,
@@ -8116,7 +8228,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 93,
@@ -8130,7 +8243,7 @@
       "encounters": [
         {
           "area": "pokemon-tower-3f",
-          "location": "Pokemon Tower (3FF)",
+          "location": "Pokemon Tower (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 20,
@@ -8140,7 +8253,7 @@
         },
         {
           "area": "pokemon-tower-4f",
-          "location": "Pokemon Tower (4FF)",
+          "location": "Pokemon Tower (4F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 20,
@@ -8150,7 +8263,7 @@
         },
         {
           "area": "pokemon-tower-5f",
-          "location": "Pokemon Tower (5FF)",
+          "location": "Pokemon Tower (5F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 20,
@@ -8160,7 +8273,7 @@
         },
         {
           "area": "pokemon-tower-6f",
-          "location": "Pokemon Tower (6FF)",
+          "location": "Pokemon Tower (6F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 21,
@@ -8170,7 +8283,7 @@
         },
         {
           "area": "pokemon-tower-7f",
-          "location": "Pokemon Tower (7FF)",
+          "location": "Pokemon Tower (7F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 23,
@@ -8288,7 +8401,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 94,
@@ -8299,7 +8413,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/94.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 95,
@@ -8313,7 +8428,7 @@
       "encounters": [
         {
           "area": "rock-tunnel-1f",
-          "location": "Rock Tunnel (1FF)",
+          "location": "Rock Tunnel (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 13,
@@ -8333,7 +8448,7 @@
         },
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 40,
@@ -8343,7 +8458,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 45,
@@ -8353,7 +8468,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 40,
@@ -8371,7 +8486,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 96,
@@ -8402,7 +8518,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 97,
@@ -8433,7 +8550,8 @@
           "chance": 100,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 98,
@@ -9084,7 +9202,8 @@
           "chance": 40,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 99,
@@ -9285,7 +9404,8 @@
           "chance": 4,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 100,
@@ -9316,7 +9436,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 101,
@@ -9329,7 +9450,7 @@
       "encounters": [
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 58,
@@ -9339,7 +9460,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 61,
@@ -9367,7 +9488,8 @@
           "chance": 100,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 102,
@@ -9429,7 +9551,8 @@
           "chance": 5,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 103,
@@ -9440,7 +9563,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/103.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 104,
@@ -9453,7 +9577,7 @@
       "encounters": [
         {
           "area": "pokemon-tower-3f",
-          "location": "Pokemon Tower (3FF)",
+          "location": "Pokemon Tower (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 15,
@@ -9463,7 +9587,7 @@
         },
         {
           "area": "pokemon-tower-4f",
-          "location": "Pokemon Tower (4FF)",
+          "location": "Pokemon Tower (4F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 15,
@@ -9473,7 +9597,7 @@
         },
         {
           "area": "pokemon-tower-5f",
-          "location": "Pokemon Tower (5FF)",
+          "location": "Pokemon Tower (5F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 15,
@@ -9483,7 +9607,7 @@
         },
         {
           "area": "pokemon-tower-6f",
-          "location": "Pokemon Tower (6FF)",
+          "location": "Pokemon Tower (6F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 17,
@@ -9493,7 +9617,7 @@
         },
         {
           "area": "pokemon-tower-7f",
-          "location": "Pokemon Tower (7FF)",
+          "location": "Pokemon Tower (7F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 17,
@@ -9511,7 +9635,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 105,
@@ -9524,7 +9649,7 @@
       "encounters": [
         {
           "area": "kanto-victory-road-2-1f",
-          "location": "Kanto Victory Road 2 (1FF)",
+          "location": "Kanto Victory Road 2 (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -9534,7 +9659,7 @@
         },
         {
           "area": "kanto-victory-road-2-2f",
-          "location": "Kanto Victory Road 2 (2FF)",
+          "location": "Kanto Victory Road 2 (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 46,
@@ -9544,7 +9669,7 @@
         },
         {
           "area": "kanto-victory-road-2-3f",
-          "location": "Kanto Victory Road 2 (3FF)",
+          "location": "Kanto Victory Road 2 (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 44,
@@ -9562,7 +9687,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 106,
@@ -9594,7 +9720,8 @@
           "versions": "both",
           "notes": "Choose Hitmonlee from Karate Master in Fighting Dojo (exclusive vs. Hitmonchan)"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 107,
@@ -9626,7 +9753,8 @@
           "versions": "both",
           "notes": "Choose Hitmonchan from Karate Master in Fighting Dojo (exclusive vs. Hitmonlee)"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 108,
@@ -9636,7 +9764,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/108.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 109,
@@ -9659,7 +9788,7 @@
         },
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 28,
@@ -9669,7 +9798,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 28,
@@ -9679,7 +9808,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 28,
@@ -9697,7 +9826,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 110,
@@ -9710,7 +9840,7 @@
       "encounters": [
         {
           "area": "pokemon-mansion-1f",
-          "location": "Pokemon Mansion (1FF)",
+          "location": "Pokemon Mansion (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -9720,7 +9850,7 @@
         },
         {
           "area": "pokemon-mansion-2f",
-          "location": "Pokemon Mansion (2FF)",
+          "location": "Pokemon Mansion (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -9730,7 +9860,7 @@
         },
         {
           "area": "pokemon-mansion-3f",
-          "location": "Pokemon Mansion (3FF)",
+          "location": "Pokemon Mansion (3F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 32,
@@ -9748,7 +9878,8 @@
           "chance": 5,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 111,
@@ -9780,7 +9911,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 112,
@@ -9791,7 +9923,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/112.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 113,
@@ -9822,7 +9955,8 @@
           "chance": 4,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 114,
@@ -9853,7 +9987,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 115,
@@ -9884,7 +10019,8 @@
           "chance": 1,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 116,
@@ -10535,7 +10671,8 @@
           "chance": 40,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 117,
@@ -10746,7 +10883,8 @@
           "chance": 4,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 118,
@@ -10819,7 +10957,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "good-rod",
           "methodDisplay": "Good Rod",
           "minLevel": 5,
@@ -10987,7 +11125,8 @@
           "chance": 20,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 119,
@@ -11058,7 +11197,8 @@
           "chance": 40,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 120,
@@ -11139,7 +11279,8 @@
           "chance": 40,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 121,
@@ -11150,7 +11291,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/121.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 122,
@@ -11173,7 +11315,8 @@
           "versions": "both",
           "notes": "Trade an Abra to NPC outside Diglett's Cave entrance on Route 2"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 123,
@@ -11205,7 +11348,8 @@
           "chance": 1,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 124,
@@ -11228,7 +11372,8 @@
           "versions": "both",
           "notes": "Trade a Poliwhirl to NPC in Cerulean City house"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 125,
@@ -11249,7 +11394,8 @@
           "chance": 4,
           "versions": "firered"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 126,
@@ -11270,7 +11416,8 @@
           "chance": 4,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 127,
@@ -11301,7 +11448,8 @@
           "chance": 1,
           "versions": "leafgreen"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 128,
@@ -11343,7 +11491,8 @@
           "versions": "firered",
           "notes": "Trade a Slowpoke to NPC on Route 16 (FireRed)"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 129,
@@ -11786,7 +11935,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "good-rod",
           "methodDisplay": "Good Rod",
           "minLevel": 5,
@@ -11796,7 +11945,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "old-rod",
           "methodDisplay": "Old Rod",
           "minLevel": 5,
@@ -12364,7 +12513,8 @@
           "chance": 100,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 130,
@@ -12578,7 +12728,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "super-rod",
           "methodDisplay": "Super Rod",
           "minLevel": 15,
@@ -12816,7 +12966,8 @@
           "chance": 15,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 131,
@@ -12840,7 +12991,7 @@
         },
         {
           "area": "saffron-city-silph-co-7f",
-          "location": "Saffron City Silph Co (7FF)",
+          "location": "Saffron City Silph Co (7F)",
           "method": "gift",
           "methodDisplay": "Gift",
           "minLevel": 25,
@@ -12859,7 +13010,8 @@
           "versions": "both",
           "notes": "Given by Silph Co. employee on 7F after defeating Giovanni"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 132,
@@ -12902,7 +13054,7 @@
         },
         {
           "area": "cerulean-cave-1f",
-          "location": "Cerulean Cave (1FF)",
+          "location": "Cerulean Cave (1F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 52,
@@ -12912,7 +13064,7 @@
         },
         {
           "area": "cerulean-cave-2f",
-          "location": "Cerulean Cave (2FF)",
+          "location": "Cerulean Cave (2F)",
           "method": "walk",
           "methodDisplay": "Walk",
           "minLevel": 55,
@@ -12940,7 +13092,8 @@
           "chance": 10,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 133,
@@ -12972,7 +13125,8 @@
           "versions": "both",
           "notes": "Received from on top floor of Celadon Mansion"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 134,
@@ -12982,7 +13136,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/134.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 135,
@@ -12992,7 +13147,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/135.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 136,
@@ -13002,7 +13158,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/136.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 137,
@@ -13024,7 +13181,8 @@
           "versions": "both",
           "notes": "Purchased for 9,999 coins at Celadon Game Corner Prize Corner"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 138,
@@ -13068,7 +13226,8 @@
           "versions": "both",
           "notes": "Revived from Dome Fossil at Cinnabar Lab"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 139,
@@ -13079,7 +13238,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/139.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 140,
@@ -13123,7 +13283,8 @@
           "versions": "both",
           "notes": "Revived from Helix Fossil at Cinnabar Lab"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 141,
@@ -13134,7 +13295,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/141.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 142,
@@ -13178,7 +13340,8 @@
           "versions": "both",
           "notes": "Revived from Old Amber at Cinnabar Lab"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 143,
@@ -13209,7 +13372,8 @@
           "chance": 100,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 144,
@@ -13242,7 +13406,8 @@
           "versions": "both",
           "notes": "Lv.50 — found in Seafoam Islands B4F; requires Strength & Surf"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 145,
@@ -13275,7 +13440,8 @@
           "versions": "both",
           "notes": "Lv.50 — found deep in Power Plant on Route 10; requires Surf"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 146,
@@ -13308,7 +13474,8 @@
           "versions": "both",
           "notes": "Lv.50 — found at top of Mt. Ember on One Island (post-game)"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 147,
@@ -13359,7 +13526,8 @@
           "chance": 15,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 148,
@@ -13410,7 +13578,8 @@
           "chance": 1,
           "versions": "both"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 149,
@@ -13421,7 +13590,8 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/149.png",
       "exclusivity": "both",
-      "encounters": []
+      "encounters": [],
+      "dex": "kanto"
     },
     {
       "id": 150,
@@ -13453,7 +13623,8 @@
           "versions": "both",
           "notes": "Lv.70 — found in Cerulean Cave B1F; requires all 8 badges"
         }
-      ]
+      ],
+      "dex": "kanto"
     },
     {
       "id": 151,
@@ -13475,7 +13646,1602 @@
           "versions": "both",
           "notes": "Obtained via Nintendo Mystery Gift event (no longer available)"
         }
-      ]
+      ],
+      "dex": "kanto"
+    },
+    {
+      "id": 161,
+      "name": "sentret",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "five-isle-meadow-area",
+          "location": "Five Isle Meadow",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 10,
+          "maxLevel": 15,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "water-path-area",
+          "location": "Water Path",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 10,
+          "maxLevel": 15,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "canyon-entrance-area",
+          "location": "Canyon Entrance",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 10,
+          "maxLevel": 15,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 165,
+      "name": "ledyba",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "pattern-bush-area",
+          "location": "Pattern Bush",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 9,
+          "maxLevel": 14,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 167,
+      "name": "spinarak",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "pattern-bush-area",
+          "location": "Pattern Bush",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 9,
+          "maxLevel": 14,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 175,
+      "name": "togepi",
+      "types": [
+        "fairy"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "water-labyrinth-area",
+          "location": "Water Labyrinth",
+          "method": "gift-egg",
+          "methodDisplay": "gift-egg",
+          "minLevel": 5,
+          "maxLevel": 5,
+          "chance": 100,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 177,
+      "name": "natu",
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "ruin-valley-area",
+          "location": "Ruin Valley",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 20,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 179,
+      "name": "mareep",
+      "types": [
+        "electric"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-b",
+          "location": "Kanto Altering Cave B",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 3,
+          "maxLevel": 13,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 183,
+      "name": "marill",
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "icefall-cave-entrance",
+          "location": "Icefall Cave Entrance",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 15,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "ruin-valley-area",
+          "location": "Ruin Valley",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 15,
+          "chance": 10,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "ruin-valley-area",
+          "location": "Ruin Valley",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 25,
+          "chance": 60,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "four-island-area",
+          "location": "Four Island",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 25,
+          "chance": 60,
+          "versions": "leafgreen"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 187,
+      "name": "hoppip",
+      "types": [
+        "grass",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "resort-gorgeous-area",
+          "location": "Resort Gorgeous",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 15,
+          "chance": 30,
+          "versions": "both"
+        },
+        {
+          "area": "water-labyrinth-area",
+          "location": "Water Labyrinth",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 15,
+          "chance": 30,
+          "versions": "both"
+        },
+        {
+          "area": "five-isle-meadow-area",
+          "location": "Five Isle Meadow",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 10,
+          "maxLevel": 15,
+          "chance": 10,
+          "versions": "both"
+        },
+        {
+          "area": "five-isle-meadow-area",
+          "location": "Five Isle Meadow",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 15,
+          "chance": 30,
+          "versions": "both"
+        },
+        {
+          "area": "memorial-pillar-area",
+          "location": "Memorial Pillar",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 6,
+          "maxLevel": 16,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "memorial-pillar-area",
+          "location": "Memorial Pillar",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 15,
+          "chance": 30,
+          "versions": "both"
+        },
+        {
+          "area": "five-island-area",
+          "location": "Five Island",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 15,
+          "chance": 30,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 190,
+      "name": "aipom",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-f",
+          "location": "Kanto Altering Cave F",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 18,
+          "maxLevel": 28,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 193,
+      "name": "yanma",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "ruin-valley-area",
+          "location": "Ruin Valley",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 18,
+          "maxLevel": 18,
+          "chance": 10,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 194,
+      "name": "wooper",
+      "types": [
+        "water",
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "icefall-cave-entrance",
+          "location": "Icefall Cave Entrance",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 15,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "ruin-valley-area",
+          "location": "Ruin Valley",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 15,
+          "chance": 10,
+          "versions": "firered"
+        },
+        {
+          "area": "ruin-valley-area",
+          "location": "Ruin Valley",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 25,
+          "chance": 60,
+          "versions": "firered"
+        },
+        {
+          "area": "four-island-area",
+          "location": "Four Island",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 5,
+          "maxLevel": 25,
+          "chance": 60,
+          "versions": "firered"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 198,
+      "name": "murkrow",
+      "types": [
+        "dark",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "lost-cave-room-1",
+          "location": "Lost Cave Room 1",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-2",
+          "location": "Lost Cave Room 2",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-3",
+          "location": "Lost Cave Room 3",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-4",
+          "location": "Lost Cave Room 4",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-5",
+          "location": "Lost Cave Room 5",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-6",
+          "location": "Lost Cave Room 6",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-7",
+          "location": "Lost Cave Room 7",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-8",
+          "location": "Lost Cave Room 8",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-9",
+          "location": "Lost Cave Room 9",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-room-10",
+          "location": "Lost Cave Room 10",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "firered"
+        },
+        {
+          "area": "lost-cave-item-rooms",
+          "location": "Lost Cave Item Rooms",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 22,
+          "chance": 10,
+          "versions": "firered"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 200,
+      "name": "misdreavus",
+      "types": [
+        "ghost"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "lost-cave-room-1",
+          "location": "Lost Cave Room 1",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-2",
+          "location": "Lost Cave Room 2",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-3",
+          "location": "Lost Cave Room 3",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-4",
+          "location": "Lost Cave Room 4",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-5",
+          "location": "Lost Cave Room 5",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-6",
+          "location": "Lost Cave Room 6",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-7",
+          "location": "Lost Cave Room 7",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-8",
+          "location": "Lost Cave Room 8",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-9",
+          "location": "Lost Cave Room 9",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-room-10",
+          "location": "Lost Cave Room 10",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 22,
+          "chance": 4,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "lost-cave-item-rooms",
+          "location": "Lost Cave Item Rooms",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 22,
+          "chance": 10,
+          "versions": "leafgreen"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 201,
+      "name": "unown",
+      "types": [
+        "psychic"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "monean-chamber-area",
+          "location": "Monean Chamber",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "liptoo-chamber-area",
+          "location": "Liptoo Chamber",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "weepth-chamber-area",
+          "location": "Weepth Chamber",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "dilford-chamber-area",
+          "location": "Dilford Chamber",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "scufib-chamber-area",
+          "location": "Scufib Chamber",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "rixy-chamber-area",
+          "location": "Rixy Chamber",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "viapos-chamber-area",
+          "location": "Viapos Chamber",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 202,
+      "name": "wobbuffet",
+      "types": [
+        "psychic"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "cerulean-cave-1f",
+          "location": "Cerulean Cave (1F)",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 55,
+          "maxLevel": 55,
+          "chance": 4,
+          "versions": "both"
+        },
+        {
+          "area": "cerulean-cave-2f",
+          "location": "Cerulean Cave (2F)",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 58,
+          "maxLevel": 58,
+          "chance": 5,
+          "versions": "both"
+        },
+        {
+          "area": "cerulean-cave-b1f",
+          "location": "Cerulean Cave B1f",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 61,
+          "maxLevel": 61,
+          "chance": 1,
+          "versions": "both"
+        },
+        {
+          "area": "ruin-valley-area",
+          "location": "Ruin Valley",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 25,
+          "maxLevel": 25,
+          "chance": 5,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 204,
+      "name": "pineco",
+      "types": [
+        "bug"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-c",
+          "location": "Kanto Altering Cave C",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 19,
+          "maxLevel": 29,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 206,
+      "name": "dunsparce",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "three-isle-port-area",
+          "location": "Three Isle Port",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 5,
+          "maxLevel": 35,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 211,
+      "name": "qwilfish",
+      "types": [
+        "water",
+        "poison"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "resort-gorgeous-area",
+          "location": "Resort Gorgeous",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "water-labyrinth-area",
+          "location": "Water Labyrinth",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "five-isle-meadow-area",
+          "location": "Five Isle Meadow",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "memorial-pillar-area",
+          "location": "Memorial Pillar",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "outcast-island-area",
+          "location": "Outcast Island",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "green-path-area",
+          "location": "Green Path",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "water-path-area",
+          "location": "Water Path",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "trainer-tower-area",
+          "location": "Trainer Tower",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        },
+        {
+          "area": "tanoby-ruins-area",
+          "location": "Tanoby Ruins",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "firered"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 213,
+      "name": "shuckle",
+      "types": [
+        "bug",
+        "rock"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-g",
+          "location": "Kanto Altering Cave G",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 18,
+          "maxLevel": 28,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 214,
+      "name": "heracross",
+      "types": [
+        "bug",
+        "fighting"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "pattern-bush-area",
+          "location": "Pattern Bush",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 30,
+          "chance": 10,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 215,
+      "name": "sneasel",
+      "types": [
+        "dark",
+        "ice"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "icefall-cave-1f",
+          "location": "Icefall Cave (1F)",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 30,
+          "maxLevel": 30,
+          "chance": 5,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "icefall-cave-b1f",
+          "location": "Icefall Cave B1f",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 30,
+          "maxLevel": 30,
+          "chance": 5,
+          "versions": "leafgreen"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 216,
+      "name": "teddiursa",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/216.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-e",
+          "location": "Kanto Altering Cave E",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 18,
+          "maxLevel": 28,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 218,
+      "name": "slugma",
+      "types": [
+        "fire"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "mt-ember-b1f",
+          "location": "Mt Ember B1f",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 24,
+          "maxLevel": 30,
+          "chance": 10,
+          "versions": "both"
+        },
+        {
+          "area": "mt-ember-b2f",
+          "location": "Mt Ember B2f",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 22,
+          "maxLevel": 32,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "mt-ember-b3f",
+          "location": "Mt Ember B3f",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 18,
+          "maxLevel": 36,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "mt-ember-b3f",
+          "location": "Mt Ember B3f",
+          "method": "rock-smash",
+          "methodDisplay": "Rock Smash",
+          "minLevel": 15,
+          "maxLevel": 35,
+          "chance": 60,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 219,
+      "name": "magcargo",
+      "types": [
+        "fire",
+        "rock"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "mt-ember-b3f",
+          "location": "Mt Ember B3f",
+          "method": "rock-smash",
+          "methodDisplay": "Rock Smash",
+          "minLevel": 25,
+          "maxLevel": 45,
+          "chance": 5,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 220,
+      "name": "swinub",
+      "types": [
+        "ice",
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "icefall-cave-1f",
+          "location": "Icefall Cave (1F)",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 23,
+          "maxLevel": 31,
+          "chance": 20,
+          "versions": "both"
+        },
+        {
+          "area": "icefall-cave-b1f",
+          "location": "Icefall Cave B1f",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 23,
+          "maxLevel": 31,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 223,
+      "name": "remoraid",
+      "types": [
+        "water"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "resort-gorgeous-area",
+          "location": "Resort Gorgeous",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "water-labyrinth-area",
+          "location": "Water Labyrinth",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "five-isle-meadow-area",
+          "location": "Five Isle Meadow",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "memorial-pillar-area",
+          "location": "Memorial Pillar",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "outcast-island-area",
+          "location": "Outcast Island",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "green-path-area",
+          "location": "Green Path",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "water-path-area",
+          "location": "Water Path",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "trainer-tower-area",
+          "location": "Trainer Tower",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "tanoby-ruins-area",
+          "location": "Tanoby Ruins",
+          "method": "super-rod",
+          "methodDisplay": "Super Rod",
+          "minLevel": 15,
+          "maxLevel": 25,
+          "chance": 40,
+          "versions": "leafgreen"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 225,
+      "name": "delibird",
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "icefall-cave-1f",
+          "location": "Icefall Cave (1F)",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 30,
+          "maxLevel": 30,
+          "chance": 5,
+          "versions": "firered"
+        },
+        {
+          "area": "icefall-cave-b1f",
+          "location": "Icefall Cave B1f",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 30,
+          "maxLevel": 30,
+          "chance": 5,
+          "versions": "firered"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 226,
+      "name": "mantine",
+      "types": [
+        "water",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "trainer-tower-area",
+          "location": "Trainer Tower",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 35,
+          "maxLevel": 40,
+          "chance": 5,
+          "versions": "leafgreen"
+        },
+        {
+          "area": "tanoby-ruins-area",
+          "location": "Tanoby Ruins",
+          "method": "surf",
+          "methodDisplay": "Surf",
+          "minLevel": 35,
+          "maxLevel": 40,
+          "chance": 5,
+          "versions": "leafgreen"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 227,
+      "name": "skarmory",
+      "types": [
+        "steel",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "sevault-canyon-area",
+          "location": "Sevault Canyon",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 30,
+          "maxLevel": 30,
+          "chance": 5,
+          "versions": "firered"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 228,
+      "name": "houndour",
+      "types": [
+        "dark",
+        "fire"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-d",
+          "location": "Kanto Altering Cave D",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 12,
+          "maxLevel": 22,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 231,
+      "name": "phanpy",
+      "types": [
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "canyon-entrance-area",
+          "location": "Canyon Entrance",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 10,
+          "maxLevel": 15,
+          "chance": 10,
+          "versions": "both"
+        },
+        {
+          "area": "sevault-canyon-area",
+          "location": "Sevault Canyon",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 15,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 234,
+      "name": "stantler",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-h",
+          "location": "Kanto Altering Cave H",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 18,
+          "maxLevel": 28,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 235,
+      "name": "smeargle",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-altering-cave-i",
+          "location": "Kanto Altering Cave I",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 18,
+          "maxLevel": 28,
+          "chance": 20,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 243,
+      "name": "raikou",
+      "types": [
+        "electric"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "roaming-kanto-area",
+          "location": "Roaming Kanto",
+          "method": "roaming-grass",
+          "methodDisplay": "roaming-grass",
+          "minLevel": 50,
+          "maxLevel": 50,
+          "chance": 25,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 244,
+      "name": "entei",
+      "types": [
+        "fire"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "roaming-kanto-area",
+          "location": "Roaming Kanto",
+          "method": "roaming-grass",
+          "methodDisplay": "roaming-grass",
+          "minLevel": 50,
+          "maxLevel": 50,
+          "chance": 25,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 245,
+      "name": "suicune",
+      "types": [
+        "water"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "roaming-kanto-area",
+          "location": "Roaming Kanto",
+          "method": "roaming-grass",
+          "methodDisplay": "roaming-grass",
+          "minLevel": 50,
+          "maxLevel": 50,
+          "chance": 25,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 246,
+      "name": "larvitar",
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "sevault-canyon-area",
+          "location": "Sevault Canyon",
+          "method": "walk",
+          "methodDisplay": "Walk",
+          "minLevel": 15,
+          "maxLevel": 20,
+          "chance": 4,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 249,
+      "name": "lugia",
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "navel-rock-area",
+          "location": "Navel Rock",
+          "method": "only-one",
+          "methodDisplay": "only-one",
+          "minLevel": 70,
+          "maxLevel": 70,
+          "chance": 100,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 250,
+      "name": "ho-oh",
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "navel-rock-area",
+          "location": "Navel Rock",
+          "method": "only-one",
+          "methodDisplay": "only-one",
+          "minLevel": 70,
+          "maxLevel": 70,
+          "chance": 100,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 251,
+      "name": "celebi",
+      "types": [
+        "psychic",
+        "grass"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "kanto-pokecenter-area",
+          "location": "Kanto Pokecenter",
+          "method": "colosseum-bonus-disc-jpn",
+          "methodDisplay": "colosseum-bonus-disc-jpn",
+          "minLevel": 10,
+          "maxLevel": 10,
+          "chance": 100,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
+    },
+    {
+      "id": 386,
+      "name": "deoxys-normal",
+      "types": [
+        "psychic"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/386.png",
+      "exclusivity": "both",
+      "encounters": [
+        {
+          "area": "birth-island-area",
+          "location": "Birth Island",
+          "method": "only-one",
+          "methodDisplay": "only-one",
+          "minLevel": 30,
+          "maxLevel": 30,
+          "chance": 100,
+          "versions": "both"
+        }
+      ],
+      "dex": "national"
     }
   ]
 }

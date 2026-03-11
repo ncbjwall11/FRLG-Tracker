@@ -24,6 +24,9 @@ export const usePokemonStore = create((set, get) => ({
   // Caught tracking
   caughtIds: loadCaughtIds(),
 
+  // Dex view
+  dexView: 'kanto', // 'kanto' | 'national'
+
   // Filters
   searchQuery: '',
   filterType: '',
@@ -51,6 +54,7 @@ export const usePokemonStore = create((set, get) => ({
     set({ caughtIds: ids })
   },
 
+  setDexView(v) { set({ dexView: v, selectedId: null }) },
   setSearch(q) { set({ searchQuery: q }) },
   setFilterType(t) { set({ filterType: t }) },
   setFilterLocation(l) { set({ filterLocation: l }) },
@@ -71,13 +75,23 @@ export const usePokemonStore = create((set, get) => ({
     })
   },
 
-  getFiltered() {
-    const { pokemon, caughtIds, searchQuery, filterType, filterLocation, filterVersion, filterCaught, sortBy } = get()
+  // Returns the active dex list (kanto = only #1-151, national = all)
+  getActivePokemon() {
+    const { pokemon, dexView } = get()
+    return dexView === 'kanto'
+      ? pokemon.filter(p => p.dex === 'kanto')
+      : pokemon // national shows everything
+  },
 
-    let list = pokemon.filter(p => {
+  getFiltered() {
+    const { caughtIds, searchQuery, filterType, filterLocation, filterVersion, filterCaught, sortBy } = get()
+    const base = get().getActivePokemon()
+
+    let list = base.filter(p => {
       if (searchQuery) {
         const q = searchQuery.toLowerCase()
-        if (!p.name.includes(q) && !String(p.id).includes(q)) return false
+        const numMatch = String(p.id).padStart(3, '0').includes(q) || String(p.id).includes(q)
+        if (!p.name.includes(q) && !numMatch) return false
       }
       if (filterType && !p.types.includes(filterType)) return false
       if (filterLocation) {
