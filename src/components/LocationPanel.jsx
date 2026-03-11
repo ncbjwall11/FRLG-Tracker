@@ -89,7 +89,11 @@ export function LocationPanel() {
     if (!byLocation[enc.location]) byLocation[enc.location] = []
     byLocation[enc.location].push(enc)
   }
-  const locationGroups = Object.entries(byLocation)
+  const locationGroups = Object.entries(byLocation).sort(([, aEncs], [, bEncs]) => {
+    const aMin = Math.min(...aEncs.map(e => e.minLevel ?? Infinity))
+    const bMin = Math.min(...bEncs.map(e => e.minLevel ?? Infinity))
+    return aMin - bMin
+  })
 
   // Helper: look up a Pokémon from the full store list by id
   const getPokemon = id => pokemon.find(pk => pk.id === id)
