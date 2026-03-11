@@ -64,7 +64,7 @@ function SectionHeader({ title, open, onToggle }) {
 }
 
 export function LocationPanel() {
-  const { pokemon, selectedId, clearSelection, caughtIds, toggleCaught, selectPokemon } = usePokemonStore()
+  const { pokemon, selectedId, clearSelection, caughtIds, toggleCaught, selectPokemon, setFilterEggGroups } = usePokemonStore()
   const p = pokemon.find(pk => pk.id === selectedId)
 
   const [encounterOpen, setEncounterOpen] = useState(true)
@@ -99,7 +99,7 @@ export function LocationPanel() {
   const getPokemon = id => pokemon.find(pk => pk.id === id)
 
   return (
-    <div className="fixed inset-y-0 right-0 w-[420px] bg-white dark:bg-gray-800 shadow-[-8px_0_40px_rgba(0,0,0,0.3)] border-l border-gray-200 dark:border-gray-700 flex flex-col z-50 overflow-hidden">
+    <div className="fixed inset-y-0 right-0 w-full sm:w-[420px] bg-white dark:bg-gray-800 shadow-[-8px_0_40px_rgba(0,0,0,0.3)] border-l border-gray-200 dark:border-gray-700 flex flex-col z-50 overflow-hidden">
 
       {/* ── Header ── */}
       <div className="flex items-center gap-3 p-4 border-b border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
@@ -125,7 +125,7 @@ export function LocationPanel() {
             ))}
           </div>
         </div>
-        <button onClick={clearSelection} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-xl leading-none ml-1 shrink-0" aria-label="Close">✕</button>
+        <button onClick={clearSelection} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 text-2xl sm:text-xl p-2 sm:p-1 leading-none ml-1 shrink-0 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors" aria-label="Close">✕</button>
       </div>
 
       {/* ── Caught toggle ── */}
@@ -333,7 +333,7 @@ export function LocationPanel() {
                 <p className="text-xs text-gray-400 dark:text-gray-500 italic">No Pokédex entry available.</p>
               )}
 
-              {/* Egg groups */}
+              {/* Egg groups — clickable to filter grid */}
               {p.eggGroups?.length > 0 && (
                 <div>
                   <div className="text-[10px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wide mb-1">
@@ -341,9 +341,14 @@ export function LocationPanel() {
                   </div>
                   <div className="flex gap-1 flex-wrap">
                     {p.eggGroups.map(g => (
-                      <span key={g} className="text-[10px] px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300">
+                      <button
+                        key={g}
+                        onClick={() => { setFilterEggGroups([g]); clearSelection() }}
+                        className="text-[10px] px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900/40 hover:text-blue-600 dark:hover:text-blue-300 transition-colors cursor-pointer"
+                        title={`Show all ${formatEggGroup(g)} Pokémon`}
+                      >
                         {formatEggGroup(g)}
-                      </span>
+                      </button>
                     ))}
                   </div>
                 </div>

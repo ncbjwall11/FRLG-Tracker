@@ -43,9 +43,10 @@ export const usePokemonStore = create((set, get) => ({
   searchQuery: '',
   filterType: '',
   filterLocation: '',
-  filterVersion: '',   // '' | 'firered' | 'leafgreen'
-  filterCaught: '',    // '' | 'caught' | 'uncaught'
-  sortBy: 'id',        // 'id' | 'name' | 'type'
+  filterVersion: '',      // '' | 'firered' | 'leafgreen'
+  filterCaught: '',       // '' | 'caught' | 'uncaught'
+  filterEggGroups: [],    // string[] — OR filter across selected egg group slugs
+  sortBy: 'id',           // 'id' | 'name' | 'type'
 
   // Selected Pokémon for detail panel
   selectedId: null,
@@ -78,6 +79,7 @@ export const usePokemonStore = create((set, get) => ({
   setFilterLocation(l) { set({ filterLocation: l }) },
   setFilterVersion(v) { set({ filterVersion: v }) },
   setFilterCaught(c) { set({ filterCaught: c }) },
+  setFilterEggGroups(groups) { set({ filterEggGroups: groups }) },
   setSortBy(s) { set({ sortBy: s }) },
   selectPokemon(id) { set({ selectedId: id }) },
   clearSelection() { set({ selectedId: null }) },
@@ -89,6 +91,7 @@ export const usePokemonStore = create((set, get) => ({
       filterLocation: '',
       filterVersion: '',
       filterCaught: '',
+      filterEggGroups: [],
       sortBy: 'id',
     })
   },
@@ -102,7 +105,7 @@ export const usePokemonStore = create((set, get) => ({
   },
 
   getFiltered() {
-    const { caughtIds, searchQuery, filterType, filterLocation, filterVersion, filterCaught, sortBy } = get()
+    const { caughtIds, searchQuery, filterType, filterLocation, filterVersion, filterCaught, filterEggGroups, sortBy } = get()
     const base = get().getActivePokemon()
 
     let list = base.filter(p => {
@@ -121,6 +124,9 @@ export const usePokemonStore = create((set, get) => ({
       }
       if (filterCaught === 'caught' && !caughtIds.has(p.id)) return false
       if (filterCaught === 'uncaught' && caughtIds.has(p.id)) return false
+      if (filterEggGroups.length > 0) {
+        if (!filterEggGroups.some(g => p.eggGroups?.includes(g))) return false
+      }
       return true
     })
 
