@@ -70,8 +70,8 @@ export default function App() {
               ${darkMode ? 'bg-white/30' : 'bg-black/20'}`}
           >
             <span
-              className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform duration-200
-                ${darkMode ? 'translate-x-5' : 'translate-x-0.5'}`}
+              className="absolute top-0.5 left-0 w-4 h-4 bg-white rounded-full shadow transition-transform duration-200"
+              style={{ transform: darkMode ? 'translateX(22px)' : 'translateX(2px)' }}
             />
           </button>
           <span className="text-base select-none">🌙</span>
