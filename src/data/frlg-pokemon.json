@@ -18837,7 +18837,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/79.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/79.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "seafoam-islands-1f",
@@ -19878,7 +19878,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/80.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/80.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "seafoam-islands-b1f",
@@ -21847,7 +21847,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/89.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/89.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "pokemon-mansion-1f",
@@ -22086,7 +22086,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/90.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/90.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "cinnabar-island-area",
@@ -22303,7 +22303,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/91.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/91.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [],
       "flavorText": "Its shell is extremely hard. It cannot be shattered, even with a bomb. The shell opens only when it is attacking.",
       "eggGroups": [
@@ -24833,7 +24833,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/99.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/99.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "kanto-sea-route-19-area",
@@ -27323,7 +27323,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/110.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/110.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "pokemon-mansion-1f",
@@ -29521,7 +29521,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/117.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/117.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "kanto-sea-route-19-area",
@@ -30480,7 +30480,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/120.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/120.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "cinnabar-island-area",
@@ -30726,7 +30726,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/121.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/121.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [],
       "flavorText": "This POKéMON has a geometric body. Because of its body, the locals suspect that it is an alien creature.",
       "eggGroups": [
@@ -40705,7 +40705,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/183.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "icefall-cave-entrance",
@@ -40925,7 +40925,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/184.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [],
       "flavorText": "When it plays in water, it rolls up its elongated ears to prevent their insides from getting wet.",
       "eggGroups": [
@@ -42048,7 +42048,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/194.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "icefall-cave-entrance",
@@ -42274,7 +42274,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/195.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [],
       "flavorText": "Due to its relaxed and carefree attitude, it often bumps its head on boulders and boat hulls as it swims.",
       "eggGroups": [
@@ -42474,7 +42474,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/198.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "lost-cave-room-1",
@@ -42749,7 +42749,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/200.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "lost-cave-room-1",
@@ -43811,7 +43811,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/211.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "resort-gorgeous-area",
@@ -44424,7 +44424,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/215.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "icefall-cave-1f",
@@ -45810,7 +45810,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/223.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "resort-gorgeous-area",
@@ -46068,7 +46068,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/224.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [],
       "flavorText": "It instinctively sneaks into rocky holes. If it gets sleepy, it steals the nest of a fellow OCTILLERY.",
       "eggGroups": [
@@ -46241,7 +46241,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/225.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "icefall-cave-1f",
@@ -46393,7 +46393,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/226.ogg",
-      "exclusivity": "both",
+      "exclusivity": "leafgreen",
       "encounters": [
         {
           "area": "trainer-tower-area",
@@ -46572,7 +46572,7 @@
       ],
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
       "cry": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/227.ogg",
-      "exclusivity": "both",
+      "exclusivity": "firered",
       "encounters": [
         {
           "area": "sevault-canyon-area",

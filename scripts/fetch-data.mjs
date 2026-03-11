@@ -32,10 +32,21 @@ async function fetchJson(url) {
   return res.json()
 }
 
-function getVersionExclusivity(id) {
+function getVersionExclusivity(id, encounters) {
+  // Manual overrides always win
   if (versionExclusives.firered.includes(id)) return 'firered'
   if (versionExclusives.leafgreen.includes(id)) return 'leafgreen'
-  return 'both'
+  // Derive from encounter data when available
+  if (encounters.length > 0) {
+    const versions = new Set(encounters.map(e => e.versions))
+    if (versions.size === 1) {
+      const v = [...versions][0]
+      if (v === 'firered' || v === 'leafgreen') return v
+    }
+    return 'both'
+  }
+  // No encounters and no manual entry — mark null, resolved in a post-pass
+  return null
 }
 
 function prettifyLocation(name) {
@@ -217,7 +228,7 @@ async function fetchPokemon(id, total) {
     types,
     sprite,
     cry: data.cries?.legacy || null,
-    exclusivity: getVersionExclusivity(id),
+    exclusivity: getVersionExclusivity(id, encounters),
     encounters,
     flavorText,
     eggGroups,
@@ -266,6 +277,43 @@ async function main() {
   }
 
   pokemon.sort((a, b) => a.id - b.id)
+
+  // Post-pass: inherit exclusivity for evolution-only Pokémon (exclusivity === null)
+  // Walk up the evolution chain until we find a Pokémon with encounter data.
+  const byId = Object.fromEntries(pokemon.map(p => [p.id, p]))
+  // Build child→parent map from the pokemon list itself using encounter patterns
+  // We use versionExclusives + encounter derivation already set; just walk parents
+  // via the raw PokeAPI evolution chain isn't available here, so we rely on the
+  // simple heuristic: a Pokémon with null exclusivity inherits from the previous
+  // sequential ID in the same dex if that ID is the same base species chain.
+  // More robustly: import evolutionData from evolutions.js.
+  const evoSrc = fs.readFileSync(
+    new URL('../src/data/evolutions.js', import.meta.url).pathname, 'utf-8'
+  )
+  const evoMatch = evoSrc.match(/export const evolutionData\s*=\s*(\{[\s\S]*?\n\})/)
+  if (evoMatch) {
+    // eslint-disable-next-line no-eval
+    const evolutionData = eval('(' + evoMatch[1] + ')')
+    function resolveExclusivity(id, visited = new Set()) {
+      if (visited.has(id)) return 'both'
+      visited.add(id)
+      const evo = evolutionData[id]
+      if (!evo) return 'both'
+      const parent = byId[evo.from]
+      if (!parent) return 'both'
+      if (parent.exclusivity !== null) return parent.exclusivity
+      return resolveExclusivity(evo.from, visited)
+    }
+    for (const p of pokemon) {
+      if (p.exclusivity === null) {
+        p.exclusivity = resolveExclusivity(p.id)
+      }
+    }
+  }
+  // Any remaining nulls fall back to 'both'
+  for (const p of pokemon) {
+    if (p.exclusivity === null) p.exclusivity = 'both'
+  }
 
   const kantoList = pokemon.filter(p => p.dex === 'kanto')
   const nationalList = pokemon.filter(p => p.dex === 'national')
