@@ -7,7 +7,7 @@ export function PokedexGrid() {
 
   if (filtered.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center py-24 text-gray-400">
+      <div className="flex flex-col items-center justify-center py-24 text-gray-400 dark:text-gray-500">
         <span className="text-5xl mb-4">🔍</span>
         <p className="text-lg font-medium">No Pokémon match your filters.</p>
         <p className="text-sm mt-1">Try adjusting or resetting your filters.</p>

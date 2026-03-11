@@ -1,6 +1,7 @@
 import { create } from 'zustand'
 
 const LS_KEY = 'frlg-caught-ids'
+const LS_DARK_KEY = 'frlg-dark-mode'
 
 function loadCaughtIds() {
   try {
@@ -15,6 +16,14 @@ function saveCaughtIds(set) {
   localStorage.setItem(LS_KEY, JSON.stringify([...set]))
 }
 
+function loadDarkMode() {
+  try {
+    return localStorage.getItem(LS_DARK_KEY) === 'true'
+  } catch {
+    return false
+  }
+}
+
 export const usePokemonStore = create((set, get) => ({
   // Data
   pokemon: [],
@@ -26,6 +35,9 @@ export const usePokemonStore = create((set, get) => ({
 
   // Dex view
   dexView: 'kanto', // 'kanto' | 'national'
+
+  // Dark mode
+  darkMode: loadDarkMode(),
 
   // Filters
   searchQuery: '',
@@ -52,6 +64,12 @@ export const usePokemonStore = create((set, get) => ({
     }
     saveCaughtIds(ids)
     set({ caughtIds: ids })
+  },
+
+  toggleDarkMode() {
+    const next = !get().darkMode
+    localStorage.setItem(LS_DARK_KEY, next)
+    set({ darkMode: next })
   },
 
   setDexView(v) { set({ dexView: v, selectedId: null }) },

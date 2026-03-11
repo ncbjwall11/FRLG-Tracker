@@ -6,11 +6,15 @@ import { LocationPanel } from './components/LocationPanel'
 import pokedexData from './data/frlg-pokemon.json'
 
 export default function App() {
-  const { loadData, caughtIds, loaded, selectedId, clearSelection, getFiltered, getActivePokemon, dexView } = usePokemonStore()
+  const { loadData, caughtIds, loaded, selectedId, clearSelection, getFiltered, getActivePokemon, dexView, darkMode, toggleDarkMode } = usePokemonStore()
 
   useEffect(() => {
     loadData(pokedexData)
   }, [])
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', darkMode)
+  }, [darkMode])
 
   const filtered = getFiltered()
   const activePokemon = getActivePokemon()
@@ -19,7 +23,7 @@ export default function App() {
 
   if (!loaded) {
     return (
-      <div className="flex items-center justify-center h-screen text-gray-500">
+      <div className="flex items-center justify-center h-screen text-gray-500 dark:text-gray-400 dark:bg-gray-900">
         <div className="text-center">
           <div className="text-5xl mb-4 animate-bounce">⏳</div>
           <p>Loading Pokédex...</p>
@@ -33,7 +37,7 @@ export default function App() {
   const headerSubtext = dexView === 'national' ? 'text-indigo-200' : 'text-red-200'
 
   return (
-    <div className={`min-h-screen bg-gray-50 transition-all ${selectedId ? 'pr-80' : ''}`}>
+    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors ${selectedId ? 'pr-80' : ''}`}>
       {/* App header */}
       <header className={`${headerBg} text-white px-4 py-3 flex items-center gap-3 shadow-md`}>
         <span className="text-2xl">{dexView === 'national' ? '🌍' : '🔴'}</span>
@@ -55,6 +59,22 @@ export default function App() {
           <p className={`text-right ${headerSubtext} text-[10px] mt-0.5`}>
             {total ? Math.round((caughtCount / total) * 100) : 0}%
           </p>
+        </div>
+        {/* Dark mode toggle */}
+        <div className="flex items-center gap-1.5 shrink-0 ml-3">
+          <span className="text-base select-none">☀️</span>
+          <button
+            onClick={toggleDarkMode}
+            aria-label="Toggle dark mode"
+            className={`relative w-10 h-5 rounded-full transition-colors duration-200 focus:outline-none
+              ${darkMode ? 'bg-white/30' : 'bg-black/20'}`}
+          >
+            <span
+              className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform duration-200
+                ${darkMode ? 'translate-x-5' : 'translate-x-0.5'}`}
+            />
+          </button>
+          <span className="text-base select-none">🌙</span>
         </div>
       </header>
 

@@ -16,30 +16,30 @@ export function FilterBar({ totalCount, filteredCount }) {
   const isFiltered = searchQuery || filterType || filterLocation || filterVersion || filterCaught
 
   return (
-    <div className="sticky top-0 z-40 bg-white border-b border-gray-200 shadow-sm">
+    <div className="sticky top-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 py-3 space-y-2">
 
         {/* Row 1: Dex toggle — prominent, full width */}
-        <div className="flex rounded-xl border-2 border-gray-200 overflow-hidden text-sm font-semibold">
+        <div className="flex rounded-xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden text-sm font-semibold">
           <button
             onClick={() => setDexView('kanto')}
             className={`flex-1 py-2 transition-colors flex items-center justify-center gap-2
               ${dexView === 'kanto'
                 ? 'bg-red-600 text-white'
-                : 'bg-white text-gray-500 hover:bg-gray-50'}`}
+                : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}
           >
             🗺️ Kanto Dex
-            <span className={`text-xs font-normal ${dexView === 'kanto' ? 'text-red-200' : 'text-gray-400'}`}>#001–#151</span>
+            <span className={`text-xs font-normal ${dexView === 'kanto' ? 'text-red-200' : 'text-gray-400 dark:text-gray-500'}`}>#001–#151</span>
           </button>
           <button
             onClick={() => setDexView('national')}
-            className={`flex-1 py-2 transition-colors flex items-center justify-center gap-2 border-l border-gray-200
+            className={`flex-1 py-2 transition-colors flex items-center justify-center gap-2 border-l border-gray-200 dark:border-gray-700
               ${dexView === 'national'
                 ? 'bg-indigo-600 text-white'
-                : 'bg-white text-gray-500 hover:bg-gray-50'}`}
+                : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}`}
           >
             🌍 National Dex
-            <span className={`text-xs font-normal ${dexView === 'national' ? 'text-indigo-200' : 'text-gray-400'}`}>All FRLG</span>
+            <span className={`text-xs font-normal ${dexView === 'national' ? 'text-indigo-200' : 'text-gray-400 dark:text-gray-500'}`}>All FRLG</span>
           </button>
         </div>
 
@@ -50,20 +50,20 @@ export function FilterBar({ totalCount, filteredCount }) {
             placeholder="Search name or #..."
             value={searchQuery}
             onChange={e => setSearch(e.target.value)}
-            className="border border-gray-300 rounded-lg px-3 py-1.5 text-sm w-44 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="border border-gray-300 dark:border-gray-600 rounded-lg px-3 py-1.5 text-sm w-44 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-400"
           />
 
           <select
             value={sortBy}
             onChange={e => setSortBy(e.target.value)}
-            className="border border-gray-300 rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white"
+            className="border border-gray-300 dark:border-gray-600 rounded-lg px-2 py-1.5 text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             <option value="id">Sort: # (Dex)</option>
             <option value="name">Sort: Name</option>
             <option value="type">Sort: Type</option>
           </select>
 
-          <div className="ml-auto text-sm text-gray-500">
+          <div className="ml-auto text-sm text-gray-500 dark:text-gray-400">
             {isFiltered ? (
               <span>{filteredCount} / {totalCount} shown</span>
             ) : (
@@ -86,7 +86,7 @@ export function FilterBar({ totalCount, filteredCount }) {
           <select
             value={filterType}
             onChange={e => setFilterType(e.target.value)}
-            className="border border-gray-300 rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white capitalize"
+            className="border border-gray-300 dark:border-gray-600 rounded-lg px-2 py-1.5 text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 capitalize focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             <option value="">All Types</option>
             {TYPES.map(t => (
@@ -97,7 +97,7 @@ export function FilterBar({ totalCount, filteredCount }) {
           <select
             value={filterLocation}
             onChange={e => setFilterLocation(e.target.value)}
-            className="border border-gray-300 rounded-lg px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white max-w-[200px]"
+            className="border border-gray-300 dark:border-gray-600 rounded-lg px-2 py-1.5 text-sm bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400 max-w-[200px]"
           >
             <option value="">All Locations</option>
             {locations.map(loc => (
@@ -105,7 +105,7 @@ export function FilterBar({ totalCount, filteredCount }) {
             ))}
           </select>
 
-          <div className="flex rounded-lg border border-gray-300 overflow-hidden text-sm">
+          <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 overflow-hidden text-sm">
             {[['', 'Both'], ['firered', 'FireRed'], ['leafgreen', 'LeafGreen']].map(([val, label]) => (
               <button
                 key={val}
@@ -113,15 +113,15 @@ export function FilterBar({ totalCount, filteredCount }) {
                 className={`px-3 py-1.5 transition-colors whitespace-nowrap
                   ${filterVersion === val
                     ? val === 'firered' ? 'bg-red-600 text-white' : val === 'leafgreen' ? 'bg-green-600 text-white' : 'bg-gray-700 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'}
-                  ${val !== '' ? 'border-l border-gray-300' : ''}`}
+                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}
+                  ${val !== '' ? 'border-l border-gray-300 dark:border-gray-600' : ''}`}
               >
                 {label}
               </button>
             ))}
           </div>
 
-          <div className="flex rounded-lg border border-gray-300 overflow-hidden text-sm">
+          <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 overflow-hidden text-sm">
             {[['', 'All'], ['caught', 'Caught ✓'], ['uncaught', 'Uncaught']].map(([val, label]) => (
               <button
                 key={val}
@@ -129,8 +129,8 @@ export function FilterBar({ totalCount, filteredCount }) {
                 className={`px-3 py-1.5 transition-colors
                   ${filterCaught === val
                     ? val === 'caught' ? 'bg-green-500 text-white' : val === 'uncaught' ? 'bg-gray-600 text-white' : 'bg-gray-700 text-white'
-                    : 'bg-white text-gray-600 hover:bg-gray-50'}
-                  ${val !== '' ? 'border-l border-gray-300' : ''}`}
+                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700'}
+                  ${val !== '' ? 'border-l border-gray-300 dark:border-gray-600' : ''}`}
               >
                 {label}
               </button>

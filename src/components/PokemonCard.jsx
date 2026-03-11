@@ -30,7 +30,7 @@ export function PokemonCard({ pokemon }) {
     <div
       onClick={handleCardClick}
       className={`relative flex flex-col items-center p-2 rounded-xl border-2 cursor-pointer transition-all select-none
-        ${caught ? 'border-green-500 bg-green-50' : 'border-gray-200 bg-white hover:border-gray-400'}
+        ${caught ? 'border-green-500 bg-green-50 dark:bg-green-900/20' : 'border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-400'}
         ${selected ? 'ring-2 ring-blue-400 border-blue-400' : ''}
       `}
     >
@@ -43,10 +43,10 @@ export function PokemonCard({ pokemon }) {
 
       {/* Dex number + version badge */}
       <div className="flex items-center gap-1 w-full mb-0.5">
-        <span className="text-[10px] text-gray-400 font-mono">
+        <span className="text-[10px] text-gray-400 dark:text-gray-500 font-mono">
           #{String(pokemon.id).padStart(3, '0')}
           {dexView === 'national' && pokemon.dex === 'kanto' && (
-            <span className="ml-1 text-gray-300">Kanto</span>
+            <span className="ml-1 text-gray-300 dark:text-gray-600">Kanto</span>
           )}
         </span>
         <div className="ml-auto">{versionBadge}</div>
@@ -62,12 +62,12 @@ export function PokemonCard({ pokemon }) {
             loading="lazy"
           />
         ) : (
-          <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 text-xs">?</div>
+          <div className="w-14 h-14 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-400 dark:text-gray-500 text-xs">?</div>
         )}
       </div>
 
       {/* Name */}
-      <span className={`text-xs font-semibold capitalize mt-1 text-center leading-tight ${caught ? 'text-gray-500' : 'text-gray-800'}`}>
+      <span className={`text-xs font-semibold capitalize mt-1 text-center leading-tight ${caught ? 'text-gray-500 dark:text-gray-400' : 'text-gray-800 dark:text-gray-100'}`}>
         {pokemon.name}
       </span>
 
@@ -94,7 +94,7 @@ export function PokemonCard({ pokemon }) {
           onChange={handleCheckbox}
           className="w-4 h-4 accent-green-500 cursor-pointer"
         />
-        <span className="text-[10px] text-gray-500">{caught ? 'Caught' : 'Not caught'}</span>
+        <span className="text-[10px] text-gray-500 dark:text-gray-400">{caught ? 'Caught' : 'Not caught'}</span>
       </label>
     </div>
   )
