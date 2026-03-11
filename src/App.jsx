@@ -35,11 +35,12 @@ export default function App() {
   const headerBg = dexView === 'national' ? 'bg-indigo-700' : 'bg-red-600'
   const headerBgBar = dexView === 'national' ? 'bg-indigo-900' : 'bg-red-800'
   const headerSubtext = dexView === 'national' ? 'text-indigo-200' : 'text-red-200'
+  const base = import.meta.env.BASE_URL
   const coverImage = filterVersion === 'firered'
-    ? '/cover-firered.jpg'
+    ? `${base}cover-firered.jpg`
     : filterVersion === 'leafgreen'
-      ? '/cover-leafgreen.jpg'
-      : '/cover-both.jpg'
+      ? `${base}cover-leafgreen.jpg`
+      : `${base}cover-both.jpg`
 
   return (
     <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors ${selectedId ? 'pr-80' : ''}`}>
