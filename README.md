@@ -1,1 +1,85 @@
-# FRLG-Tracker
+# FireRed / LeafGreen Tracker
+
+A Pokédex and encounter tracker for **Pokémon FireRed & LeafGreen**, playable in the browser.
+
+🔗 **Live app:** [ncbjwall11.github.io/FRLG-Tracker](https://ncbjwall11.github.io/FRLG-Tracker/)
+
+---
+
+## Features
+
+### 📋 Pokédex with Tracking
+- Browse all **211 Pokémon** available in FireRed & LeafGreen — full Kanto Dex (1–151) plus every non-Kanto species with an in-game encounter
+- Mark each Pokémon as **caught** — progress is saved locally in your browser
+- Cry audio plays when you mark a Pokémon as caught
+- Filter by **FireRed-only**, **LeafGreen-only**, or both version exclusives
+- Switch between **Kanto Dex** (151) and **National Dex** (all 211) views
+- Progress bar shows how much of the active dex you've caught
+
+### 🔍 Per-Pokémon Detail Panel
+Click any Pokémon to open its detail panel:
+
+**Encounter Data**
+- All wild encounter locations with method (walk, surf, fishing, etc.), level range, encounter rate, and version availability
+- Locations sorted by level — earliest-game encounters first
+- Evolution method shown for Pokémon obtained by evolving
+
+**Pokédex Entry**
+- FireRed flavor text (falls back to LeafGreen if unavailable)
+- Egg groups
+- Base stat bars (HP, Attack, Defense, Sp. Atk, Sp. Def, Speed) with numeric values and BST total
+
+**Evolution Chain**
+- Visual sprite chain with evolution method labels (level, stone, trade, friendship)
+- Click any Pokémon in the chain to jump directly to its entry
+
+**Learnset** *(Gen 3 accurate)*
+- Level-up moves with levels
+- TM/HM compatibility with disc labels (TM01–TM50, HM01–HM07)
+- Move Tutor moves
+- Egg moves
+
+### 🎨 UI
+- Dark mode (default on) with toggle
+- Cover art changes to match the active version filter
+- Sidebar floats over the Pokémon grid without shifting the layout
+
+---
+
+## Data Sources
+
+- Encounter data, learnsets, stats, and Pokédex entries are fetched from [PokéAPI](https://pokeapi.co/)
+- TM/HM compatibility, version exclusives, and manual encounter data are curated by hand for FRLG accuracy
+- All data is **Gen 3 specific** — types (no Fairy), moves, and learnsets reflect FireRed & LeafGreen
+
+---
+
+## Tech Stack
+
+| | |
+|---|---|
+| Framework | React 18 + Vite |
+| Styling | Tailwind CSS v4 |
+| State | Zustand v5 |
+| Persistence | `localStorage` |
+| Hosting | GitHub Pages |
+
+---
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
+
+# Re-fetch Pokémon data from PokéAPI (~2–3 min, rate-limited)
+npm run fetch-data
+
+# Production build
+npm run build
+```
+
+> **Note:** The `fetch-data` script hits PokéAPI for all 211 Pokémon (3 endpoints each) with a 200 ms delay between requests. You only need to run it again if you want to update the data.
