@@ -72,11 +72,33 @@ export const evolutionData = {
   141: { from: 140, fromName: 'Kabuto',     trigger: 'level', level: 40 },
   148: { from: 147, fromName: 'Dratini',    trigger: 'level', level: 30 },
   149: { from: 148, fromName: 'Dragonair',  trigger: 'level', level: 55 },
+
+  // --- Gen 2 (National Dex chains available in FRLG) ---
+  162: { from: 161, fromName: 'Sentret',    trigger: 'level', level: 15 },
+  166: { from: 165, fromName: 'Ledyba',     trigger: 'level', level: 18 },
+  168: { from: 167, fromName: 'Spinarak',   trigger: 'level', level: 22 },
+  176: { from: 175, fromName: 'Togepi',     trigger: 'friendship' },
+  178: { from: 177, fromName: 'Natu',       trigger: 'level', level: 25 },
+  180: { from: 179, fromName: 'Mareep',     trigger: 'level', level: 15 },
+  181: { from: 180, fromName: 'Flaaffy',    trigger: 'level', level: 30 },
+  184: { from: 183, fromName: 'Marill',     trigger: 'level', level: 18 },
+  188: { from: 187, fromName: 'Hoppip',     trigger: 'level', level: 18 },
+  189: { from: 188, fromName: 'Skiploom',   trigger: 'level', level: 27 },
+  195: { from: 194, fromName: 'Wooper',     trigger: 'level', level: 20 },
+  205: { from: 204, fromName: 'Pineco',     trigger: 'level', level: 31 },
+  217: { from: 216, fromName: 'Teddiursa',  trigger: 'level', level: 30 },
+  221: { from: 220, fromName: 'Swinub',     trigger: 'level', level: 33 },
+  224: { from: 223, fromName: 'Remoraid',   trigger: 'level', level: 25 },
+  229: { from: 228, fromName: 'Houndour',   trigger: 'level', level: 24 },
+  232: { from: 231, fromName: 'Phanpy',     trigger: 'level', level: 25 },
+  247: { from: 246, fromName: 'Larvitar',   trigger: 'level', level: 30 },
+  248: { from: 247, fromName: 'Pupitar',    trigger: 'level', level: 55 },
 }
 
 export function getEvolutionLabel(evo) {
   if (evo.trigger === 'level') return `Evolves from ${evo.fromName} at level ${evo.level}`
   if (evo.trigger === 'stone') return `Evolves from ${evo.fromName} using ${evo.item}`
   if (evo.trigger === 'trade') return `Evolves from ${evo.fromName} by trading`
+  if (evo.trigger === 'friendship') return `Evolves from ${evo.fromName} with high friendship`
   return `Evolves from ${evo.fromName}`
 }

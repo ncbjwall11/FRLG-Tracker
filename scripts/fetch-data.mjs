@@ -12,7 +12,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { manualData, versionExclusives } from '../src/data/frlg-manual.js'
+import { manualData, versionExclusives, nationalEvolutionIds } from '../src/data/frlg-manual.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTPUT_PATH = path.join(__dirname, '../src/data/frlg-pokemon.json')
@@ -164,7 +164,7 @@ async function main() {
   for (let id = KANTO_MAX + 1; id <= NATIONAL_MAX; id++) {
     try {
       const p = await fetchPokemon(id, NATIONAL_MAX)
-      if (p.encounters.length > 0) {
+      if (p.encounters.length > 0 || nationalEvolutionIds.includes(id)) {
         pokemon.push({ ...p, dex: 'national' })
       }
       await sleep(DELAY_MS)

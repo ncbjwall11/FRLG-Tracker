@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-11T14:01:38.339Z",
+  "generatedAt": "2026-03-11T14:13:18.986Z",
   "kantoCount": 151,
-  "nationalCount": 41,
+  "nationalCount": 60,
   "locations": [
     "Berry Forest",
     "Birth Island",
@@ -13692,6 +13692,17 @@
       "dex": "national"
     },
     {
+      "id": 162,
+      "name": "furret",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
       "id": 165,
       "name": "ledyba",
       "types": [
@@ -13712,6 +13723,18 @@
           "versions": "both"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 166,
+      "name": "ledian",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -13738,6 +13761,18 @@
       "dex": "national"
     },
     {
+      "id": 168,
+      "name": "ariados",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
       "id": 175,
       "name": "togepi",
       "types": [
@@ -13757,6 +13792,18 @@
           "versions": "both"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 176,
+      "name": "togetic",
+      "types": [
+        "fairy",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -13783,6 +13830,18 @@
       "dex": "national"
     },
     {
+      "id": 178,
+      "name": "xatu",
+      "types": [
+        "psychic",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
       "id": 179,
       "name": "mareep",
       "types": [
@@ -13802,6 +13861,28 @@
           "versions": "both"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 180,
+      "name": "flaaffy",
+      "types": [
+        "electric"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
+      "id": 181,
+      "name": "ampharos",
+      "types": [
+        "electric"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -13855,6 +13936,18 @@
           "versions": "leafgreen"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 184,
+      "name": "azumarill",
+      "types": [
+        "water",
+        "fairy"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -13938,6 +14031,30 @@
           "versions": "both"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 188,
+      "name": "skiploom",
+      "types": [
+        "grass",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
+      "id": 189,
+      "name": "jumpluff",
+      "types": [
+        "grass",
+        "flying"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -14036,6 +14153,18 @@
           "versions": "firered"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 195,
+      "name": "quagsire",
+      "types": [
+        "water",
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -14440,6 +14569,18 @@
       "dex": "national"
     },
     {
+      "id": 205,
+      "name": "forretress",
+      "types": [
+        "bug",
+        "steel"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
       "id": 206,
       "name": "dunsparce",
       "types": [
@@ -14666,6 +14807,17 @@
       "dex": "national"
     },
     {
+      "id": 217,
+      "name": "ursaring",
+      "types": [
+        "normal"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
       "id": 218,
       "name": "slugma",
       "types": [
@@ -14774,6 +14926,18 @@
       "dex": "national"
     },
     {
+      "id": 221,
+      "name": "piloswine",
+      "types": [
+        "ice",
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
       "id": 223,
       "name": "remoraid",
       "types": [
@@ -14873,6 +15037,17 @@
           "versions": "leafgreen"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 224,
+      "name": "octillery",
+      "types": [
+        "water"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -14988,6 +15163,18 @@
       "dex": "national"
     },
     {
+      "id": 229,
+      "name": "houndoom",
+      "types": [
+        "dark",
+        "fire"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
       "id": 231,
       "name": "phanpy",
       "types": [
@@ -15017,6 +15204,17 @@
           "versions": "both"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 232,
+      "name": "donphan",
+      "types": [
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {
@@ -15150,6 +15348,30 @@
           "versions": "both"
         }
       ],
+      "dex": "national"
+    },
+    {
+      "id": 247,
+      "name": "pupitar",
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
+      "exclusivity": "both",
+      "encounters": [],
+      "dex": "national"
+    },
+    {
+      "id": 248,
+      "name": "tyranitar",
+      "types": [
+        "rock",
+        "dark"
+      ],
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+      "exclusivity": "both",
+      "encounters": [],
       "dex": "national"
     },
     {

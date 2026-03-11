@@ -93,6 +93,30 @@ export const manualData = {
   },
 }
 
+// Gen 2 Pokémon that are obtainable only by evolution (no wild FRLG encounters).
+// The fetch script will always include these in the national dex.
+export const nationalEvolutionIds = [
+  162, // Furret      ← Sentret (#161)
+  166, // Ledian      ← Ledyba (#165)
+  168, // Ariados     ← Spinarak (#167)
+  176, // Togetic     ← Togepi (#175)
+  178, // Xatu        ← Natu (#177)
+  180, // Flaaffy     ← Mareep (#179)
+  181, // Ampharos    ← Flaaffy (#180)
+  184, // Azumarill   ← Marill (#183)
+  188, // Skiploom    ← Hoppip (#187)
+  189, // Jumpluff    ← Skiploom (#188)
+  195, // Quagsire    ← Wooper (#194)
+  205, // Forretress  ← Pineco (#204)
+  217, // Ursaring    ← Teddiursa (#216)
+  221, // Piloswine   ← Swinub (#220)
+  224, // Octillery   ← Remoraid (#223)
+  229, // Houndoom    ← Houndour (#228)
+  232, // Donphan     ← Phanpy (#231)
+  247, // Pupitar     ← Larvitar (#246)
+  248, // Tyranitar   ← Pupitar (#247)
+]
+
 // Version-exclusive Pokémon in FRLG (wild encounters)
 // This supplements PokeAPI data which may not always mark exclusivity clearly.
 export const versionExclusives = {
