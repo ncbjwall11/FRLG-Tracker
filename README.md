@@ -1,6 +1,8 @@
+![pokemon-firered-and-leafgreen-cover cover_large](https://github.com/user-attachments/assets/f090923e-2baa-4bca-8f3f-f8c983fb8651)
+
 # FireRed / LeafGreen Tracker
 
-A Pokédex and encounter tracker for **Pokémon FireRed & LeafGreen**, playable in the browser.
+A Pokédex and encounter tracker for **Pokémon FireRed & LeafGreen**, usable in the browser.
 
 🔗 **Live app:** [juicyjstn.github.io/FRLG-Tracker](https://juicyjstn.github.io/FRLG-Tracker/)
 
