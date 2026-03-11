@@ -12,7 +12,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { manualData, versionExclusives, nationalEvolutionIds, gen3TypeOverrides } from '../src/data/frlg-manual.js'
+import { manualData, versionExclusives, nationalEvolutionIds, gen3TypeOverrides, frlgMachines } from '../src/data/frlg-manual.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const OUTPUT_PATH = path.join(__dirname, '../src/data/frlg-pokemon.json')
@@ -74,12 +74,27 @@ function prettifyMoveName(name) {
     .join(' ')
 }
 
+function extractStats(data) {
+  const s = Object.fromEntries(data.stats.map(x => [x.stat.name, x.base_stat]))
+  return {
+    hp:  s['hp']              || 0,
+    atk: s['attack']          || 0,
+    def: s['defense']         || 0,
+    spa: s['special-attack']  || 0,
+    spd: s['special-defense'] || 0,
+    spe: s['speed']           || 0,
+    bst: data.stats.reduce((t, x) => t + x.base_stat, 0),
+  }
+}
+
 async function fetchPokemon(id, total) {
   process.stdout.write(`  [${String(id).padStart(3)}/${total}] #${id}...`)
 
   const data = await fetchJson(`https://pokeapi.co/api/v2/pokemon/${id}/`)
   await sleep(DELAY_MS)
   const encountersRaw = await fetchJson(`https://pokeapi.co/api/v2/pokemon/${id}/encounters`)
+  await sleep(DELAY_MS)
+  const species = await fetchJson(`https://pokeapi.co/api/v2/pokemon-species/${id}/`)
 
   const sprite =
     data.sprites?.versions?.['generation-iii']?.['firered-leafgreen']?.front_default ||
@@ -154,27 +169,47 @@ async function fetchPokemon(id, total) {
     }
   }
 
+  // Flavor text — prefer FireRed, fall back to LeafGreen
+  const ftEntry =
+    species.flavor_text_entries.find(e => e.language.name === 'en' && e.version.name === 'firered') ||
+    species.flavor_text_entries.find(e => e.language.name === 'en' && e.version.name === 'leafgreen')
+  const flavorText = ftEntry
+    ? ftEntry.flavor_text.replace(/[\f\n\r\u000c]/g, ' ').replace(/\s+/g, ' ').trim()
+    : ''
+
+  const eggGroups = species.egg_groups.map(g => g.name)
+  const stats = extractStats(data)
+
   // Build learnset for FRLG version group
-  const learnset = { levelUp: [], tmhm: [], tutor: [] }
+  const seen = new Set()
+  const learnset = { levelUp: [], tmhm: [], tutor: [], egg: [] }
   for (const moveEntry of data.moves) {
     for (const vd of moveEntry.version_group_details) {
       if (vd.version_group.name !== 'firered-leafgreen') continue
-      const moveName = prettifyMoveName(moveEntry.move.name)
+      const slug = moveEntry.move.name
+      const moveName = prettifyMoveName(slug)
       const method = vd.move_learn_method.name
       if (method === 'level-up') {
         learnset.levelUp.push({ move: moveName, level: vd.level_learned_at })
       } else if (method === 'machine') {
-        if (!learnset.tmhm.includes(moveName)) learnset.tmhm.push(moveName)
+        const label = frlgMachines[slug]
+        const key = `tm:${slug}`
+        if (label && !seen.has(key)) { seen.add(key); learnset.tmhm.push({ label, move: moveName }) }
       } else if (method === 'tutor') {
-        if (!learnset.tutor.includes(moveName)) learnset.tutor.push(moveName)
+        const key = `tutor:${slug}`
+        if (!seen.has(key)) { seen.add(key); learnset.tutor.push(moveName) }
+      } else if (method === 'egg') {
+        const key = `egg:${slug}`
+        if (!seen.has(key)) { seen.add(key); learnset.egg.push(moveName) }
       }
     }
   }
   learnset.levelUp.sort((a, b) => a.level - b.level)
-  learnset.tmhm.sort()
+  learnset.tmhm.sort((a, b) => a.label.localeCompare(b.label))
   learnset.tutor.sort()
+  learnset.egg.sort()
 
-  process.stdout.write(` ✓ (${encounters.length} enc)\n`)
+  process.stdout.write(` ✓ (${encounters.length} enc, ${learnset.levelUp.length} lvl, ${learnset.tmhm.length} tm)\n`)
 
   return {
     id,
@@ -184,6 +219,9 @@ async function fetchPokemon(id, total) {
     cry: data.cries?.legacy || null,
     exclusivity: getVersionExclusivity(id),
     encounters,
+    flavorText,
+    eggGroups,
+    stats,
     learnset,
   }
 }

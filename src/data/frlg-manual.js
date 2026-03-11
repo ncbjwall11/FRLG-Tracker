@@ -139,3 +139,24 @@ export const versionExclusives = {
   leafgreen: [27, 28, 37, 38, 52, 53, 69, 70, 71, 126, 127],
   // Sandshrew, Sandslash, Vulpix, Ninetales, Meowth, Persian, Bellsprout, Weepinbell, Victreebel, Magmar, Pinsir
 }
+
+// FRLG TM/HM — maps move slug → label (TM01–TM50, HM01–HM07)
+export const frlgMachines = {
+  'focus-punch': 'TM01', 'dragon-claw': 'TM02', 'water-pulse': 'TM03',
+  'calm-mind': 'TM04', 'roar': 'TM05', 'toxic': 'TM06', 'hail': 'TM07',
+  'bulk-up': 'TM08', 'bullet-seed': 'TM09', 'hidden-power': 'TM10',
+  'sunny-day': 'TM11', 'taunt': 'TM12', 'ice-beam': 'TM13', 'blizzard': 'TM14',
+  'hyper-beam': 'TM15', 'light-screen': 'TM16', 'protect': 'TM17',
+  'rain-dance': 'TM18', 'giga-drain': 'TM19', 'safeguard': 'TM20',
+  'frustration': 'TM21', 'solar-beam': 'TM22', 'iron-tail': 'TM23',
+  'thunderbolt': 'TM24', 'thunder': 'TM25', 'earthquake': 'TM26',
+  'return': 'TM27', 'dig': 'TM28', 'psychic': 'TM29', 'shadow-ball': 'TM30',
+  'brick-break': 'TM31', 'double-team': 'TM32', 'reflect': 'TM33',
+  'shock-wave': 'TM34', 'flamethrower': 'TM35', 'sludge-bomb': 'TM36',
+  'sandstorm': 'TM37', 'fire-blast': 'TM38', 'rock-tomb': 'TM39',
+  'aerial-ace': 'TM40', 'torment': 'TM41', 'facade': 'TM42',
+  'secret-power': 'TM43', 'rest': 'TM44', 'attract': 'TM45', 'thief': 'TM46',
+  'steel-wing': 'TM47', 'skill-swap': 'TM48', 'snatch': 'TM49', 'overheat': 'TM50',
+  'cut': 'HM01', 'fly': 'HM02', 'surf': 'HM03', 'strength': 'HM04',
+  'flash': 'HM05', 'rock-smash': 'HM06', 'waterfall': 'HM07',
+}

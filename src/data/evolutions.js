@@ -102,3 +102,49 @@ export function getEvolutionLabel(evo) {
   if (evo.trigger === 'friendship') return `Evolves from ${evo.fromName} with high friendship`
   return `Evolves from ${evo.fromName}`
 }
+
+// Short label shown between sprites in the evolution chain visual
+export function evoStepLabel(evo) {
+  if (evo.trigger === 'level') return `Lv. ${evo.level}`
+  if (evo.trigger === 'stone') return evo.item
+  if (evo.trigger === 'trade') return 'Trade'
+  if (evo.trigger === 'friendship') return 'Friendship'
+  return '→'
+}
+
+// Returns the full evolution chain for any Pokémon in the chain.
+// Linear:   { type: 'linear',    chain: [id, evoData, id, evoData, id, ...] }
+// Branching:{ type: 'branching', baseId, branches: [{id, evoData}, ...] }
+// No chain: null
+export function getFullEvolutionChain(pokemonId) {
+  // Walk up to base form
+  let baseId = pokemonId
+  while (evolutionData[baseId]) baseId = evolutionData[baseId].from
+
+  // All direct children of a given id
+  const childrenOf = parentId =>
+    Object.entries(evolutionData)
+      .filter(([, d]) => d.from === parentId)
+      .map(([id, d]) => ({ id: Number(id), evoData: d }))
+
+  const direct = childrenOf(baseId)
+  if (direct.length === 0) return null
+
+  // Branching (e.g. Eevee → Vaporeon/Jolteon/Flareon)
+  if (direct.length > 1) {
+    return { type: 'branching', baseId, branches: direct }
+  }
+
+  // Linear chain: walk down until leaf
+  const chain = [baseId]
+  let cur = baseId
+  while (true) {
+    const kids = childrenOf(cur)
+    if (kids.length === 0) break
+    chain.push(kids[0].evoData)
+    chain.push(kids[0].id)
+    cur = kids[0].id
+  }
+  if (chain.length === 1) return null
+  return { type: 'linear', chain }
+}
